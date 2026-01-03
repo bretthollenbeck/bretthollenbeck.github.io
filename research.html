@@ -138,10 +138,30 @@
             line-height: 1.5;
         }
 
+        .paper-title a {
+            color: var(--color-link);
+            text-decoration: none;
+        }
+
+        .paper-title a:hover {
+            color: var(--color-link-hover);
+            text-decoration: underline;
+        }
+
         .paper-authors {
             font-size: 0.9rem;
             color: var(--color-text-secondary);
             margin-top: 0.2rem;
+        }
+
+        .paper-status {
+            font-size: 0.9rem;
+            color: var(--color-text-secondary);
+            margin-top: 0.15rem;
+        }
+
+        .paper-status em {
+            font-style: italic;
         }
 
         .paper-venue {
@@ -154,25 +174,6 @@
             font-style: italic;
         }
 
-        .paper-status {
-            display: inline-block;
-            font-size: 0.8rem;
-            color: #1a5276;
-            background: rgba(26, 82, 118, 0.08);
-            padding: 0.15rem 0.5rem;
-            border-radius: 3px;
-            margin-left: 0.25rem;
-        }
-
-        .paper-links {
-            font-size: 0.85rem;
-            margin-top: 0.3rem;
-        }
-
-        .paper-links a {
-            margin-right: 1rem;
-        }
-
         .paper-press {
             font-size: 0.85rem;
             color: var(--color-text-secondary);
@@ -183,6 +184,15 @@
         .paper-press strong {
             font-weight: 500;
             color: var(--color-text);
+        }
+
+        .paper-press a {
+            color: var(--color-link);
+            text-decoration: none;
+        }
+
+        .paper-press a:hover {
+            text-decoration: underline;
         }
 
         /* Footer */
@@ -217,7 +227,6 @@
                 <li><a href="index.html">About</a></li>
                 <li><a href="research.html" class="active">Research</a></li>
                 <li><a href="data.html">Data</a></li>
-                <li><a href="press.html">Press</a></li>
                 <li><a href="contact.html">Contact</a></li>
             </ul>
         </nav>
@@ -232,7 +241,7 @@
                     <a href="https://bretthollenbeck.com/wp-content/uploads/2024/06/caoui_hollenbck_osborne_dollar_store_dynamic_model.pdf">Dynamic Entry & Spatial Competition: An Application to Dollar Store Expansion</a>
                 </div>
                 <div class="paper-authors">(with El Hadi Caoui and Matthew Osborne)</div>
-                <div class="paper-venue"><em>RAND Journal of Economics</em> <span class="paper-status">Accepted</span></div>
+                <div class="paper-status"><em>RAND Journal of Economics.</em> Accepted.</div>
             </div>
 
             <div class="paper">
@@ -240,7 +249,7 @@
                     <a href="https://bretthollenbeck.com/wp-content/uploads/2024/06/hollenbeck_hristakeva_uetake_retail_competition.pdf">Retailer Price Competition and Assortment Differentiation: Evidence from Entry Lotteries</a>
                 </div>
                 <div class="paper-authors">(with Sylvia Hristakeva and Kosuke Uetake)</div>
-                <div class="paper-venue"><em>Marketing Science</em> <span class="paper-status">R&R</span></div>
+                <div class="paper-status"><em>Marketing Science.</em> Revise and resubmit.</div>
             </div>
 
             <div class="paper">
@@ -248,7 +257,7 @@
                     <a href="https://papers.ssrn.com/sol3/papers.cfm?abstract_id=4903302">The Financial Consequences of Legalized Sports Gambling</a>
                 </div>
                 <div class="paper-authors">(with Poet Larsen and Davide Proserpio)</div>
-                <div class="paper-venue"><em>Management Science</em> <span class="paper-status">Accepted</span></div>
+                <div class="paper-status"><em>Management Science.</em> Accepted.</div>
                 <div class="paper-press">
                     <strong>Press:</strong> 
                     <a href="https://www.economist.com/briefing/2024/12/05/gambling-is-growing-like-gangbusters-in-america">The Economist</a>, 
@@ -265,7 +274,7 @@
                     <a href="https://bretthollenbeck.com/wp-content/uploads/2025/08/caoui_hollenbeck_osborne_dollarstores_foodaccess.pdf">The Impact of Dollar Store Expansion on Local Market Structure and Food Access</a>
                 </div>
                 <div class="paper-authors">(with El Hadi Caoui and Matthew Osborne)</div>
-                <div class="paper-venue"><em>Quantitative Marketing and Economics</em> <span class="paper-status">R&R</span></div>
+                <div class="paper-status"><em>Quantitative Marketing and Economics.</em> Revise and resubmit.</div>
             </div>
 
             <div class="paper">
@@ -289,7 +298,7 @@
                     <a href="https://bretthollenbeck.com/wp-content/uploads/2025/05/att_privacy.pdf">Evaluating The Impact of Privacy Regulation on E-Commerce Firms: Evidence from Apple's App Tracking Transparency</a>
                 </div>
                 <div class="paper-authors">(with Guy Aridor, Yeon-koo Che, Max Kaiser, and Dan McCarthy)</div>
-                <div class="paper-venue"><em>Management Science</em>. Forthcoming.</div>
+                <div class="paper-venue"><em>Management Science.</em> Forthcoming.</div>
             </div>
 
             <div class="paper">
@@ -297,7 +306,7 @@
                     <a href="https://bretthollenbeck.com/wp-content/uploads/2022/11/r2_fake_review_detection_pnas_template.pdf">Detecting Fake Review Buyers Using Network Structure: Direct Evidence from Amazon</a>
                 </div>
                 <div class="paper-authors">(with Sherry He, Gijs Overgoor, Davide Proserpio, and Ali Tosyali)</div>
-                <div class="paper-venue"><em>Proceedings of the National Academy of Sciences</em>. Vol. 119 (47), 2022.</div>
+                <div class="paper-venue"><em>Proceedings of the National Academy of Sciences.</em> Vol. 119 (47), 2022.</div>
                 <div class="paper-press"><strong>Press:</strong> <a href="https://www.wsj.com/articles/how-to-spot-fake-reviews-and-shady-ratings-on-amazon-11658333513">Wall Street Journal</a></div>
             </div>
 
@@ -306,7 +315,7 @@
                     <a href="https://bretthollenbeck.com/wp-content/uploads/2021/12/fakereviewdraft_r2.pdf">The Market for Fake Reviews</a>
                 </div>
                 <div class="paper-authors">(with Sherry He and Davide Proserpio)</div>
-                <div class="paper-venue"><em>Marketing Science</em>. 2022, Vol. 41(5), p. 896-921.</div>
+                <div class="paper-venue"><em>Marketing Science.</em> 2022, Vol. 41(5), p. 896-921.</div>
                 <div class="paper-press">
                     <strong>Press:</strong> 
                     <a href="https://www.wsj.com/articles/fake-reviews-and-inflated-ratings-are-still-a-problem-for-amazon-11623587313">WSJ</a>, 
@@ -321,7 +330,7 @@
                     <a href="https://ssrn.com/abstract=3613183">Winning Big: Scale and Success in Retail Entrepreneurship</a>
                 </div>
                 <div class="paper-authors">(with Renato Giroldo)</div>
-                <div class="paper-venue"><em>Marketing Science</em>. 2021, Vol. 41(2), p. 271-293.</div>
+                <div class="paper-venue"><em>Marketing Science.</em> 2021, Vol. 41(2), p. 271-293.</div>
             </div>
 
             <div class="paper">
@@ -329,7 +338,7 @@
                     <a href="https://bretthollenbeck.com/wp-content/uploads/2021/05/hollenbeck_taylor_lp_and_competition.pdf">Leveraging Loyalty Programs Using Competitor Based Targeting</a>
                 </div>
                 <div class="paper-authors">(with Wayne Taylor)</div>
-                <div class="paper-venue"><em>Quantitative Marketing and Economics</em>. 2021, Vol. 19, p. 417-455.</div>
+                <div class="paper-venue"><em>Quantitative Marketing and Economics.</em> 2021, Vol. 19, p. 417-455.</div>
             </div>
 
             <div class="paper">
@@ -337,7 +346,7 @@
                     <a href="https://bretthollenbeck.com/wp-content/uploads/2021/03/hollenbeck_marketpower_taxation_rand_final.pdf">Taxation and Market Power in the Legal Marijuana Industry</a>
                 </div>
                 <div class="paper-authors">(with Kosuke Uetake)</div>
-                <div class="paper-venue"><em>RAND Journal of Economics</em>. 2021, Vol. 52(3), p. 559-595.</div>
+                <div class="paper-venue"><em>RAND Journal of Economics.</em> 2021, Vol. 52(3), p. 559-595.</div>
                 <div class="paper-press"><strong>Press:</strong> <a href="https://www.anderson.ucla.edu/faculty-and-research/anderson-review/weed">UCLA Anderson Review</a></div>
             </div>
 
@@ -345,7 +354,7 @@
                 <div class="paper-title">
                     <a href="https://bretthollenbeck.com/wp-content/uploads/2019/06/mergers2019.pdf">Horizontal Mergers and Innovation in Concentrated Industries</a>
                 </div>
-                <div class="paper-venue"><em>Quantitative Marketing and Economics</em>. 2020, Vol. 18, p. 1-37.</div>
+                <div class="paper-venue"><em>Quantitative Marketing and Economics.</em> 2020, Vol. 18, p. 1-37.</div>
             </div>
 
             <div class="paper">
@@ -353,14 +362,14 @@
                     <a href="https://bretthollenbeck.com/wp-content/uploads/2019/05/hotels-ad-spending-24may2019.pdf">Advertising Strategy in the Presence of Reviews: an Empirical Analysis</a>
                 </div>
                 <div class="paper-authors">(with Sridhar Moorthy and Davide Proserpio)</div>
-                <div class="paper-venue"><em>Marketing Science</em>. 2019, Vol. 38(5), p. 793-811.</div>
+                <div class="paper-venue"><em>Marketing Science.</em> 2019, Vol. 38(5), p. 793-811.</div>
             </div>
 
             <div class="paper">
                 <div class="paper-title">
                     <a href="https://bretthollenbeck.com/wp-content/uploads/2018/09/onlinereviews-spring17-2.pdf">Online Reputation Mechanisms and the Decreasing Value of Chain Affiliation</a>
                 </div>
-                <div class="paper-venue"><em>Journal of Marketing Research</em>. 2018, Vol. 55(5), p. 636-654.</div>
+                <div class="paper-venue"><em>Journal of Marketing Research.</em> 2018, Vol. 55(5), p. 636-654.</div>
                 <div class="paper-press"><strong>Press:</strong> <a href="https://www.wsj.com/articles/online-reviews-help-independent-hotels-steal-business-from-chains-1493604180">Wall Street Journal</a></div>
             </div>
 
@@ -368,7 +377,7 @@
                 <div class="paper-title">
                     <a href="https://papers.ssrn.com/sol3/papers.cfm?abstract_id=2621840">The Economic Advantages of Chain Organization</a>
                 </div>
-                <div class="paper-venue"><em>RAND Journal of Economics</em>. 2017, Vol. 48(4), p. 1103-1135.</div>
+                <div class="paper-venue"><em>RAND Journal of Economics.</em> 2017, Vol. 48(4), p. 1103-1135.</div>
             </div>
 
             <h2 class="section-title">Other Publications</h2>
@@ -378,7 +387,7 @@
                     <a href="https://hbr.org/2020/11/how-fake-customer-reviews-do-and-dont-work">How Fake Customer Reviews Do – And Don't – Work</a>
                 </div>
                 <div class="paper-authors">(with Sherry He and Davide Proserpio)</div>
-                <div class="paper-venue"><em>Harvard Business Review</em>. 2020.</div>
+                <div class="paper-venue"><em>Harvard Business Review.</em> 2020.</div>
             </div>
 
             <div class="paper">
@@ -386,7 +395,7 @@
                     <a href="https://hbr.org/2021/10/how-to-make-your-loyalty-program-pay-off">How to Make Your Loyalty Program Pay Off</a>
                 </div>
                 <div class="paper-authors">(with Wayne Taylor)</div>
-                <div class="paper-venue"><em>Harvard Business Review</em>. 2021.</div>
+                <div class="paper-venue"><em>Harvard Business Review.</em> 2021.</div>
             </div>
 
             <div class="paper">
@@ -394,15 +403,15 @@
                     <a href="https://bretthollenbeck.com/wp-content/uploads/2021/11/hollenbck-sigecom-fake-reviews.pdf">Exploiting Social Media for Fake Reviews: Evidence from Facebook and Amazon</a>
                 </div>
                 <div class="paper-authors">(with Sherry He and Davide Proserpio)</div>
-                <div class="paper-venue"><em>ACM SIGecom Exchanges</em>. 2021, Vol. 19(2), p. 68-74.</div>
+                <div class="paper-venue"><em>ACM SIGecom Exchanges.</em> 2021, Vol. 19(2), p. 68-74.</div>
             </div>
 
             <div class="paper">
                 <div class="paper-title">
-                    <a href="https://www.pymnts.com/cpi-posts/tracking-based-advertising-after-apples-app-tracking-transparency-firm-level-evidence-and-policy-implications/">Tracking-Based Advertising After Apple's App Tracking Transparency: Firm-Level Evidence and Policy Implications</a>
+                    <a href="https://www.pymnts.com/cpi-posts/tracking-based-advertising-after-apples-app-tracking-transparency-firm-level-evidence-and-policy-implications/">Tracking-Based Advertising After Apple's App Tracking Transparency</a>
                 </div>
                 <div class="paper-authors">(with Guy Aridor and Dan McCarthy)</div>
-                <div class="paper-venue"><em>CPI TechReg Chronicle</em>. 2025.</div>
+                <div class="paper-venue"><em>CPI TechReg Chronicle.</em> 2025.</div>
             </div>
 
         </main>
@@ -413,3 +422,4 @@
     </div>
 </body>
 </html>
+
