@@ -1,0 +1,248 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Press – Brett Hollenbeck</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Crimson+Pro:ital,wght@0,400;0,500;0,600;1,400&family=Source+Sans+3:wght@400;500;600&display=swap" rel="stylesheet">
+    <style>
+        :root {
+            --color-text: #2c2c2c;
+            --color-text-secondary: #555;
+            --color-link: #1a5276;
+            --color-link-hover: #0d3d56;
+            --color-border: #ddd;
+            --color-bg: #fafafa;
+            --font-heading: 'Crimson Pro', Georgia, serif;
+            --font-body: 'Source Sans 3', -apple-system, sans-serif;
+        }
+
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+
+        html {
+            font-size: 18px;
+        }
+
+        body {
+            font-family: var(--font-body);
+            color: var(--color-text);
+            background: var(--color-bg);
+            line-height: 1.7;
+        }
+
+        a {
+            color: var(--color-link);
+            text-decoration: none;
+            transition: color 0.2s ease;
+        }
+
+        a:hover {
+            color: var(--color-link-hover);
+            text-decoration: underline;
+        }
+
+        /* Layout */
+        .container {
+            max-width: 820px;
+            margin: 0 auto;
+            padding: 0 2rem;
+        }
+
+        /* Header */
+        header {
+            padding: 2.5rem 0 1.5rem;
+            border-bottom: 1px solid var(--color-border);
+        }
+
+        .logo {
+            font-family: var(--font-heading);
+            font-size: 1.8rem;
+            font-weight: 500;
+            color: var(--color-text);
+            letter-spacing: -0.02em;
+        }
+
+        .logo:hover {
+            text-decoration: none;
+            color: var(--color-text);
+        }
+
+        /* Navigation */
+        nav {
+            padding: 1rem 0;
+            border-bottom: 1px solid var(--color-border);
+        }
+
+        nav ul {
+            list-style: none;
+            display: flex;
+            gap: 2rem;
+            flex-wrap: wrap;
+        }
+
+        nav a {
+            font-size: 0.95rem;
+            font-weight: 500;
+            color: var(--color-text-secondary);
+        }
+
+        nav a:hover,
+        nav a.active {
+            color: var(--color-text);
+            text-decoration: none;
+        }
+
+        /* Main Content */
+        main {
+            padding: 3rem 0 4rem;
+        }
+
+        /* Page Title */
+        .page-title {
+            font-family: var(--font-heading);
+            font-size: 2rem;
+            font-weight: 500;
+            margin-bottom: 2rem;
+            letter-spacing: -0.01em;
+        }
+
+        /* Press Section */
+        .press-section {
+            margin-bottom: 2.5rem;
+        }
+
+        .press-paper-title {
+            font-weight: 500;
+            font-size: 1.05rem;
+            margin-bottom: 0.75rem;
+            color: var(--color-text);
+        }
+
+        .press-list {
+            list-style: none;
+            padding: 0;
+            margin: 0;
+        }
+
+        .press-list li {
+            margin-bottom: 0.5rem;
+            font-size: 0.95rem;
+            color: var(--color-text-secondary);
+        }
+
+        .press-list a {
+            color: var(--color-link);
+        }
+
+        .press-list a:hover {
+            color: var(--color-link-hover);
+            text-decoration: underline;
+        }
+
+        /* Footer */
+        footer {
+            padding: 2rem 0;
+            border-top: 1px solid var(--color-border);
+            font-size: 0.85rem;
+            color: var(--color-text-secondary);
+        }
+
+        /* Responsive */
+        @media (max-width: 700px) {
+            html {
+                font-size: 16px;
+            }
+
+            nav ul {
+                justify-content: center;
+                gap: 1.25rem;
+            }
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <header>
+            <a href="index.html" class="logo">Brett Hollenbeck</a>
+        </header>
+
+        <nav>
+            <ul>
+                <li><a href="index.html">About</a></li>
+                <li><a href="research.html">Research</a></li>
+                <li><a href="data.html">Data</a></li>
+                <li><a href="press.html" class="active">Press</a></li>
+                <li><a href="contact.html">Contact</a></li>
+            </ul>
+        </nav>
+
+        <main>
+            <h1 class="page-title">Press</h1>
+
+            <div class="press-section">
+                <div class="press-paper-title">The Financial Consequences of Legalized Sports Gambling</div>
+                <ul class="press-list">
+                    <li><a href="https://www.economist.com/briefing/2024/12/05/gambling-is-growing-like-gangbusters-in-america">The Economist</a></li>
+                    <li><a href="https://www.nytimes.com/2024/08/21/opinion/online-betting-gambling.html">New York Times</a></li>
+                    <li><a href="https://www.theatlantic.com/ideas/archive/2024/09/legal-sports-gambling-was-mistake/679925/">The Atlantic</a></li>
+                    <li><a href="https://www.washingtonpost.com/opinions/2024/09/14/nfl-sports-gambling-addiction-sportsbooks-credit-scores/">Washington Post</a></li>
+                    <li><a href="https://www.bloomberg.com/news/articles/2024-09-27/sports-betting-apps-are-even-more-toxic-than-you-imagined">Bloomberg</a></li>
+                    <li><a href="https://www.businessinsider.com/sports-betting-debt-bankruptcy-gambling-young-men-research-addiction-2024-8">Business Insider</a></li>
+                    <li><a href="https://www.nbcnews.com/business/consumer/online-sports-gambling-bankrupting-households-reducing-savings-rcna167235">NBC News</a></li>
+                    <li><a href="https://www.theguardian.com/us-news/article/2024/sep/04/2024-nfl-season-gambling-sports-betting">The Guardian</a></li>
+                    <li><a href="https://www.youtube.com/watch?v=Pxvfy4qQRog">Last Week Tonight with John Oliver</a></li>
+                </ul>
+            </div>
+
+            <div class="press-section">
+                <div class="press-paper-title">The Market for Fake Reviews</div>
+                <ul class="press-list">
+                    <li><a href="https://www.wsj.com/articles/fake-reviews-and-inflated-ratings-are-still-a-problem-for-amazon-11623587313">Wall Street Journal</a></li>
+                    <li><a href="https://www.economist.com/graphic-detail/2020/09/03/a-new-study-analyses-the-murky-world-of-fake-amazon-reviews">The Economist</a></li>
+                    <li><a href="https://www.nytimes.com/2020/11/19/technology/fake-reviews-amazon.html">New York Times</a></li>
+                    <li><a href="https://hbr.org/2020/11/how-fake-customer-reviews-do-and-dont-work">Harvard Business Review</a></li>
+                    <li><a href="https://www.businessinsider.com/amazon-deleted-product-reviews-after-study-highlighted-paid-for-ratings-2020-9">Business Insider</a></li>
+                    <li><a href="https://www.cnbc.com/2020/09/06/amazon-reviews-thousands-are-fake-heres-how-to-spot-them.html">CNBC</a></li>
+                    <li><a href="https://www.anderson.ucla.edu/faculty-and-research/anderson-review/fake-reviews">UCLA Anderson Review</a></li>
+                </ul>
+            </div>
+
+            <div class="press-section">
+                <div class="press-paper-title">Detecting Fake Review Buyers Using Network Structure</div>
+                <ul class="press-list">
+                    <li><a href="https://www.wsj.com/articles/how-to-spot-fake-reviews-and-shady-ratings-on-amazon-11658333513">Wall Street Journal</a></li>
+                </ul>
+            </div>
+
+            <div class="press-section">
+                <div class="press-paper-title">Taxation and Market Power in the Legal Marijuana Industry</div>
+                <ul class="press-list">
+                    <li><a href="https://www.anderson.ucla.edu/faculty-and-research/anderson-review/weed">UCLA Anderson Review</a></li>
+                    <li><a href="https://www.leafly.com/news/industry/are-cannabis-taxes-too-low-some-economists-think-so">Leafly</a></li>
+                    <li><a href="https://www.bizjournals.com/portland/news/2019/09/26/how-oregon-is-leaving-tens-of-millions-in-cannabis.html">Portland Business Journal</a></li>
+                    <li><a href="https://investorplace.com/2019/10/canopy-growth-stock-could-see-more-downside-but-its-a-long-term-winner/">Investorplace</a></li>
+                </ul>
+            </div>
+
+            <div class="press-section">
+                <div class="press-paper-title">Online Reputation Mechanisms and the Decreasing Value of Chain Affiliation</div>
+                <ul class="press-list">
+                    <li><a href="https://www.wsj.com/articles/online-reviews-help-independent-hotels-steal-business-from-chains-1493604180">Wall Street Journal</a></li>
+                    <li><a href="http://theweek.com/articles/770712/enormous-influence-online-reviews">The Week</a></li>
+                </ul>
+            </div>
+
+        </main>
+
+        <footer>
+            &copy; 2025 Brett Hollenbeck
+        </footer>
+    </div>
+</body>
+</html>
