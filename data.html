@@ -108,16 +108,52 @@
             font-family: var(--font-heading);
             font-size: 2rem;
             font-weight: 500;
-            margin-bottom: 1.5rem;
+            margin-bottom: 2rem;
             letter-spacing: -0.01em;
         }
 
-        .page-content {
-            color: var(--color-text-secondary);
+        /* Data Section */
+        .data-section {
+            margin-bottom: 2.5rem;
         }
 
-        .page-content a {
+        .data-section-title {
+            font-family: var(--font-heading);
+            font-size: 1.2rem;
+            font-weight: 500;
+            margin-bottom: 0.75rem;
+            color: var(--color-text);
+        }
+
+        .data-section p {
+            color: var(--color-text-secondary);
+            margin-bottom: 0.75rem;
+            font-size: 0.95rem;
+        }
+
+        .data-links {
+            list-style: none;
+            padding: 0;
+            margin: 0;
+        }
+
+        .data-links li {
+            margin-bottom: 0.4rem;
+            font-size: 0.95rem;
+        }
+
+        .data-links a {
             color: var(--color-link);
+        }
+
+        .data-links a:hover {
+            color: var(--color-link-hover);
+            text-decoration: underline;
+        }
+
+        .file-size {
+            color: var(--color-text-secondary);
+            font-size: 0.85rem;
         }
 
         /* Footer */
@@ -159,9 +195,49 @@
 
         <main>
             <h1 class="page-title">Data</h1>
-            <div class="page-content">
-                <p>If you are interested in any of the data used in my papers, please reach out via <a href="mailto:brett.hollenbeck@anderson.ucla.edu">email</a>.</p>
+
+            <div class="data-section">
+                <h2 class="data-section-title">Amazon Fake Reviews Data</h2>
+                <p>NEW (July 2025): Several files of fake reviews data are available below. More detailed data is also available on <a href="https://github.com/bretthollenbeck/fake-reviews-data">GitHub</a>.</p>
+                <ul class="data-links">
+                    <li><a href="https://www.dropbox.com/s/fj2pi2svgocj6th/README.rtf?dl=0">Description</a></li>
+                    <li><a href="https://www.dropbox.com/s/4ll1k7b5bt2em2s/final-dataset-all.dta?dl=0">Fake Reviews Data Download</a> <span class="file-size">(90MB)</span></li>
+                </ul>
             </div>
+
+            <div class="data-section">
+                <h2 class="data-section-title">Amazon Fake Reviews Detection Data and Code</h2>
+                <ul class="data-links">
+                    <li><a href="https://www.dropbox.com/sh/ubjmuecovg7gfh9/AADmaBvlxwPJ9jXbpkqiVMkfa?dl=0">Data and Code Download</a> <span class="file-size">(22MB)</span></li>
+                    <li><a href="https://bretthollenbeck.com/wp-content/uploads/2022/11/detection_datasets_description.docx">Description</a></li>
+                </ul>
+            </div>
+
+            <div class="data-section">
+                <h2 class="data-section-title">Texas Hotel Industry Tax Receipts Data (2000-2015)</h2>
+                <ul class="data-links">
+                    <li><a href="https://bretthollenbeck.com/wp-content/uploads/2021/07/hotel_revenue_description-1.docx">Description</a></li>
+                    <li><a href="https://www.dropbox.com/s/oyfjb5o0lttb1q5/hotel_revenue_cleaned.csv.zip?dl=0">Download</a> <span class="file-size">(9MB)</span></li>
+                </ul>
+            </div>
+
+            <div class="data-section">
+                <h2 class="data-section-title">Texas Hotel Online Reviews Full Text Data</h2>
+                <ul class="data-links">
+                    <li><a href="https://bretthollenbeck.com/wp-content/uploads/2021/07/hotel_reviews_description.docx">Description</a></li>
+                    <li><a href="https://www.dropbox.com/s/rbqhd13e89ijlsr/Review%20full%20text%20data.zip?dl=0">Download</a> <span class="file-size">(130MB)</span></li>
+                </ul>
+            </div>
+
+            <div class="data-section">
+                <h2 class="data-section-title">Washington Cannabis Industry Data</h2>
+                <ul class="data-links">
+                    <li><a href="https://bretthollenbeck.com/wp-content/uploads/2021/07/cannabis_data_description-1.docx">Description</a></li>
+                    <li><a href="https://www.dropbox.com/s/2ths5zgdrgo7xnf/Cannabis%20data.zip?dl=0">Retail Data Download</a> <span class="file-size">(30MB)</span></li>
+                    <li><a href="https://www.dropbox.com/s/9snnp8omhs43u87/biotrackthc_inventorytransfers_updated.csv.zip?dl=0">Upstream Data Download</a> <span class="file-size">(120MB)</span></li>
+                </ul>
+            </div>
+
         </main>
 
         <footer>
