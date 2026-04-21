@@ -1,0 +1,56 @@
+# Online Reputation Mechanisms and the Decreasing Value of Chain Affiliation
+Brett Hollenbeck, UCLA Anderson School of Management
+March 2018
+
+## What is this paper about?
+
+This paper measures how the rise of online review platforms (TripAdvisor, Yelp, etc.) has eroded the value of branding, quantifying this by measuring the revenue premium that brand-name, or chain-affiliated, hotels earn over independent hotels. The core argument is that branding has historically been valuable because it lets firms signal quality in settings with asymmetric information. As online reviews provide consumers with an alternative source of quality information, that signaling value declines. The paper quantifies both the marginal effect of additional reviews on branded (i.e. chain) vs. independent hotel revenue and the cumulative decline in the chain revenue premium between 2000 and 2015.
+
+## Important context
+
+- "Brand" or "Chain affiliation" here means business format franchising — a local franchisee owns and operates the property but licenses a brand name and operating standards from a parent chain. The paper is about the value of that branding, not about vertical integration or chain ownership.
+- "Independent hotel" means a non-chain-affiliated property, not a boutique or luxury property. The comparison includes all quality tiers.
+- The identification relies on firm fixed effects (switchers who add/drop chain affiliation) and several robustness checks including IV strategies in the web appendix. 
+- The paper pioneers text analysis of reviews, using LDA to construct multi-dimensional measures of hotel quality that vary over time.
+- The setting is the entire Texas hotel industry. Texas is used because the state collects a hotel occupancy tax, making full revenue data available for all properties. The generalizability to other states/sectors is asserted but not tested.
+- "Value of chain affiliation" does not include cost advantages (e.g., centralized purchasing), only the revenue premium side.
+
+## Data and methods
+
+- **Revenue data:** 15-year monthly panel (2000–2015) of hotel revenues from Texas Comptroller tax records; 5,265 properties in 548 cities; ~$89.4 billion in total observed revenues.
+- **Review data:** 1.44 million full-text reviews scraped from TripAdvisor and Priceline in March 2015, matched to the revenue panel.
+- **Quality measure:** AAA star ratings (1–5) used as the objective quality tier classification; TripAdvisor/Priceline ratings used as time-varying quality proxies.
+- **Text analysis:** Latent Dirichlet Allocation (LDA) with 6 topics to extract latent quality dimensions from review text; Naive Bayes classification to identify terms distinctive to chain vs. independent reviews.
+- **Identification:** Property fixed effects (estimated off ~663 hotels that switch chain affiliation during sample), owner fixed effects, year × market-type interactions. IV robustness checks in companion web appendix.
+
+## Key results
+
+1. **Marginal information effects are asymmetric:** Additional reviews, review characters, unique review terms, and recent reviews are all positively associated with independent hotel revenue but have no significant association with chain hotel revenue — after controlling for quality and fixed effects.
+
+2. **Chain revenue premium has fallen by roughly half:** Chain hotels earned a 31.8% revenue premium over equivalent independent hotels in 2000; by 2015 this had fallen to 19.3%. The average over the full period is ~25%.
+
+3. **Heterogeneity by quality and market size:** The decline is concentrated among low-quality (1–2 AAA star) hotels and hotels in small/rural markets. For high-quality or urban hotels, the premium has fallen little. For 1–2 star hotels in small markets, the chain premium has nearly disappeared.
+
+4. **Shift from chain reputation to outlet reputation:** Within chain hotels, the correlation between a property's revenue and its chain-wide average rating is declining over time, while the correlation with its own property-level rating is rising.
+
+## Limitations and scope
+
+- **One state:** All data come from Texas. Results may not generalize to states with different market structures, demographics, or levels of tourism.
+- **No cost side:** The paper measures only the revenue premium associated with chain affiliation. It does not account for franchising fees, required capital expenditures, or cost advantages of chain membership, so welfare implications for franchisees are not established.
+- **Causality caveat:** The primary strategy controls for time-invariant hotel quality via fixed effects and time-varying quality via ratings/LDA topic scores. If there are time-varying, unobserved quality factors that affect independent and chain hotels differentially and are correlated with review volume, the estimates are not causal. IV results in the appendix reduce but do not eliminate this concern.
+- **Review platform coverage:** Reviews were scraped in 2015; earlier years have sparser coverage. Firms that exited before 2015 have partial review histories.
+- **Hotel industry specifics:** The hotel product is a single-night stay, competition is primarily local/geographic, and quality tiers are industry-standardized by AAA. The mechanism may differ in industries with more complex products, national competition, or less standardized quality signals.
+- **No direct measure of consumer search behavior:** The paper infers that consumers rely less on chain signals from the revenue patterns; it does not directly observe how consumers use reviews in their booking decisions.
+
+## Navigation guide
+
+- **Read first:** Abstract and Introduction for the full argument; "Aggregate Implications for Chains" section for the headline chain premium results (Figures 4–7, Table 3).
+- **For the empirical strategy:** "Empirical Strategy" subsection and equation (1); the switcher identification is explained in the footnote on p. 186.
+- **For the text/ML analysis:** "Text Analysis" subsection and Table 1 (LDA topics), Table 2 (Naive Bayes distinctive terms).
+- **For heterogeneity results:** Figure 3 (marginal effects by star rating and market size), Figure 4 (chain premium by quality tier), and Figure 8 (chain vs. outlet reputation over time).
+- **For robustness and IV:** Companion web appendix (online_reviews_web_appendix.tex/.pdf).
+
+## Publication status
+
+Published: *Journal of Marketing Research*, 2018, Vol. 55(5), pp. 636–654.
+https://journals.sagepub.com/doi/10.1177/0022243718802844
