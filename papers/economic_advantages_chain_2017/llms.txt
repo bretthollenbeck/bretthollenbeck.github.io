@@ -1,0 +1,59 @@
+# The Economic Advantages of Chain Organization
+Brett Hollenbeck, UCLA Anderson School of Management
+2017
+
+## What is this paper about?
+
+This paper asks why chain firms have spread so rapidly across retail and service industries. The conventional explanation is that chains generate cost advantages through economies of scale. An alternative is that chains create demand-side advantages by allowing firms to develop reputations in otherwise low-information settings. Using detailed firm-level data on the Texas hotel industry, the paper tests both explanations. The revenue analysis finds a large chain premium — roughly 20% higher revenue per room (RevPar) for chain-affiliated hotels after controlling for quality and market characteristics — that appears immediately when a firm joins a chain, grows with chain size, and disappears among firms with many online reviews. The structural cost estimation finds that after accounting for unobserved heterogeneity, chain-affiliated hotels receive no cost advantage over independent firms. The evidence therefore suggests chains are economically advantageous primarily through demand and reputation effects, not through economies of scale.
+
+## Important context
+
+- "Chain affiliation" here means business format franchising — a local owner licenses a brand and operating standards, with the chain setting fees but not making the entry/exit decision. The paper is about the horizontal chain structure, not vertical integration.
+- "Independent hotel" means unaffiliated, not boutique or luxury. The comparison includes all quality tiers.
+- Identification of the chain revenue premium relies on firm fixed effects estimated off ~104 hotels that add or drop chain affiliation during the sample, alongside extensive robustness tests on leads/lags.
+- The structural cost model uses the Arcidiacono-Miller (2011) estimator with flexible unobserved market-level heterogeneity; the paper is one of the first applications of this estimator. Ignoring unobserved heterogeneity reverses the sign of the cost coefficient, showing it matters substantially.
+- The setting for the dynamic structural model is rural Texas hotels only; large metropolitan areas (Houston, Dallas, etc.) are excluded due to unobserved heterogeneity in location and traveler types.
+- This paper complements "Online Reputation Mechanisms and the Decreasing Value of Chain Affiliation" (JMR 2018), which also uses this dataset to study how online reviews erode the chain premium over time.
+
+## Data and methods
+
+- **Revenue data:** Quarterly panel 2000–2012 of hotel revenues from Texas Comptroller of Public Accounts tax records; 353 rural markets, 1,465 hotels.
+- **Quality:** AAA star ratings (1–4); TripAdvisor ratings and review counts from December 2012 cross-section.
+- **Market data:** County unemployment, population, total sales, oil/gas well counts (Texas Railroad Commission), highway traffic (TxDOT).
+- **Revenue estimation:** OLS with firm and market fixed effects; chain premium identified off ~104 switchers (hotels adding/dropping affiliation); lead/lag tests for pre-trends.
+- **Cost estimation:** Dynamic discrete game (Ericson-Pakes style); two-step CCP estimator following Arcidiacono-Miller (2011) with unobserved market heterogeneity (10-point discrete distribution); model solved and simulated for validation.
+- **Validation:** Forward simulation from 2000 market structure compared to 2011 outcomes; costs benchmarked against Smith Travel Research industry survey data.
+Data is available here: https://bretthollenbeck.com/data.html
+
+## Key results
+
+1. **Large chain revenue premium:** Chain hotels earn ~$4.35 more per room per day (21.1%) than observationally equivalent independent hotels after firm fixed effects; ~$5.78 (27.7%) without fixed effects. The premium is immediate upon joining a chain and does not phase in over time.
+
+2. **No chain cost advantage:** After accounting for unobserved market heterogeneity, chain-affiliated hotels have no statistically significant cost advantage — the cost difference is essentially zero (~$0.50 per room per day, insignificant). This contrasts with the retail chains literature, which finds large cost advantages.
+
+3. **Premium is consistent with reputation/information mechanism:** Four patterns support the asymmetric information explanation: (a) the premium declines over the sample period (from ~30% in 2002 to ~15% in 2012) coinciding with the rise of online reviews; (b) it appears immediately when a firm joins a chain; (c) it is larger for hotels in bigger chains; (d) among hotels with many online reviews the premium essentially disappears.
+
+4. **Chain bans and welfare:** The structural model implies that chain affiliation is valuable primarily through demand, suggesting policies that restrict chain entry (e.g., local chain bans) harm consumers by eliminating a reputation signal that substitutes for unavailable information.
+
+## Limitations and scope
+
+- **Rural Texas only:** The sample is partially restricted to rural/small-market Texas hotels. Large urban markets are excluded; results may not generalize to city hotels, other states, or other service industries.
+- **Revenue ≠ prices and quantities:** Only RevPar (revenue per room) is observed, not prices or occupancy separately. Demand parameters cannot be estimated directly.
+- **Cost estimation requires strong assumptions:** The dynamic model requires Markovian strategies, equilibrium play, and a specific distribution of private information shocks. 
+- **Review data cross-section only:** TripAdvisor data is from December 2012 only; earlier years have sparser or no coverage, so the review-based tests are cross-sectional.
+- **No welfare calculation:** The paper establishes that chain premiums are demand-based but does not compute full consumer welfare implications of counterfactual chain bans or other policies.
+
+## Navigation guide
+
+- **Read first:** Introduction and Section 1 (Revenue Analysis) for the chain premium results. Table 3 (revenue regressions) and Figure 5 (leads/lags around switching) are the core reduced-form findings.
+- **For the declining premium over time:** Figure 6 (chain premium % by year) and the discussion in Section 4 (Sources of Revenue Advantage).
+- **For the cost estimation:** Section 2 (Model) and Section 3 (Recovering Costs); Table 8 (cost estimates with unobserved heterogeneity) is the key result.
+- **For the information/reputation tests:** Section 4 — chain size regression (Table 9), review-truncated premium (Figure 8).
+- **For model fit/validation:** Table 11 (simulated vs. actual firm distributions) and Table 10 (cost comparison to STR industry survey).
+
+## Publication status
+
+Published: *RAND Journal of Economics*, 2017, Vol. 48(4), pp. 1130–1153.
+https://doi.org/10.1111/1756-2171.12215
+https://onlinelibrary.wiley.com/doi/abs/10.1111/1756-2171.12214
+https://papers.ssrn.com/sol3/papers.cfm?abstract_id=2874560
