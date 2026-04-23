@@ -1,0 +1,35 @@
+
+\centering
+{
+\def\sym#1{\ifmmode^{#1}\else\(^{#1}\)\fi}
+\resizebox*{\textwidth}{!}{
+\begin{threeparttable}
+
+\begin{tabular}{l*{9}{c}}
+\toprule
+                &                  &\multicolumn{4}{c}{Spending by Channel}                                    &\multicolumn{4}{c}{Trips by Channel} \\ \cmidrule(lr){3-6} \cmidrule(lr){7-10}
+                &\multicolumn{1}{c}{(1)}         &\multicolumn{1}{c}{(2)}         &\multicolumn{1}{c}{(3)}         &\multicolumn{1}{c}{(4)}         &\multicolumn{1}{c}{(5)}         &\multicolumn{1}{c}{(6)}         &\multicolumn{1}{c}{(7)}         &\multicolumn{1}{c}{(8)}         &\multicolumn{1}{c}{(9)}         \\
+                &Aggregate         &  Grocery         &   Dollar         &  SC/Club         &     Conv         &  Grocery         &   Dollar         &  SC/Club         &     Conv         \\
+\midrule
+One DS Entry  &   -30.82\sym{***}&   -20.85\sym{***}&    5.063\sym{***}&   -5.612         &   -0.991\sym{*}  &   -0.913\sym{***}&    0.670\sym{***}&   -0.141         &   -0.162\sym{***}\\
+                &  (6.590)         &  (5.048)         &  (0.493)         &  (3.845)         &  (0.413)         &  (0.169)         & (0.0509)         &  (0.102)         & (0.0478)         \\
+Two DS Entries  &   -6.746         &   -8.324         &    5.949\sym{***}&   -1.104         &    0.108         &   -0.888\sym{**} &    1.060\sym{***}&    0.416\sym{*}  &   -0.158         \\
+                &  (12.28)         &  (9.946)         &  (0.952)         &  (7.219)         &  (0.702)         &  (0.339)         &  (0.100)         &  (0.201)         & (0.0989)         \\
+Three+ DS Entries&    40.52         &    30.05         &    10.48\sym{***}&   -7.074         &   -2.105         &   -0.450         &    1.572\sym{***}&    1.269\sym{***}&   -0.539\sym{**} \\
+                &  (21.03)         &  (16.79)         &  (1.644)         &  (11.19)         &  (1.409)         &  (0.625)         &  (0.187)         &  (0.338)         &  (0.184)         \\
+\midrule
+Observations    &  570,689         &  570,689         &  570,689         &  570,689         &  570,689         &  570,689         &  570,689         &  570,689         &  570,689         \\
+F-stat          &    838.8         &    426.7         &     4.14         &    928.2         &     2.24         &     48.0         &     6.84         &    674.5         &     2.79         \\
+\(R^{2}\)       &     0.83         &     0.84         &     0.77         &     0.84         &     0.68         &     0.84         &     0.81         &     0.84         &     0.75         \\
+Adjusted \(R^{2}\)&     0.79         &     0.80         &     0.71         &     0.80         &     0.61         &     0.81         &     0.76         &     0.80         &     0.70         \\
+Mean Pre-Entry  &   2917.3         &   1768.3         &     32.3         &    777.2         &     14.6         &     57.8         &     4.85         &     22.4         &     2.16         \\
+\bottomrule
+\end{tabular}
+\begin{tablenotes}[flushleft]
+\small 
+\item \textit{Notes: Unit of observation is the household-year. Standard errors (in parenthesis) clustered at the household level. Year and household fixed effects are included. Controls for time-varying household demographics (income, education, age, household size, marital status, occupation, weekly hours worked) are included. Results are shown for all panelists in the sample. The first column shows aggregate spending. SC/Club stands for the Supercenter and Club store channel. Conv stands for the convenience store channel.}
+\end{tablenotes}
+
+
+\end{threeparttable}}
+}

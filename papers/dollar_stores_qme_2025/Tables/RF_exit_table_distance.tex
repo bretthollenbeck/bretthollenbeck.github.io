@@ -1,0 +1,38 @@
+\def\sym#1{\ifmmode^{#1}\else\(^{#1}\)\fi}
+\begin{table}[ht]
+\caption{Effect of DS Entry (by distance band) on Number of Grocery Stores}
+\label{RF_exit_table_distance}
+\centering
+\begin{threeparttable}
+\begin{tabular}{l*{6}{c}}
+\hline\hline
+                &\multicolumn{1}{c}{(1)}         &\multicolumn{1}{c}{(2)}         &\multicolumn{1}{c}{(3)}    \\
+                &     0-2m         &     2-5m         &    5-10m              \\
+\hline
+One DS Entry &  -0.0705\sym{***}&   -0.108\sym{***}&   0.0293         \\
+                & (0.0160)         & (0.0184)         & (0.0180)         \\
+Two DS Entries &   -0.307\sym{***}&   -0.224\sym{***}&   0.0578         \\
+                & (0.0289)         & (0.0332)         & (0.0347)         \\
+Three+ DS Entries &   -0.976\sym{***}&   -0.509\sym{***}&    0.286\sym{***}\\
+                & (0.0521)         & (0.0581)         & (0.0614)         \\
+
+ \addlinespace               
+Demographic Controls                 &   Yes    &   Yes     &    Yes      \\
+Business Density                 &   Yes    &   Yes     &    Yes      \\
+Census Tract FE                   &   Yes    &   Yes     &    Yes        \\
+County*Year FE                   &   Yes    &   Yes     &    Yes        \\
+
+
+\hline
+Observations    &  453,657         &  307,321         &  263,488         \\
+F-stat          &     89.6         &     29.9         &     14.2         \\
+Adjusted \(R^{2}\)&     0.98         &     0.99         &     0.99         \\
+Mean Pre-Entry  &     2.72         &     3.97         &     6.28         \\
+\hline\hline
+\end{tabular}
+\begin{tablenotes}[flushleft]
+\small 
+\item \textit{Notes: Unit of observation is the location-year. Standard errors (in parenthesis) clustered at the location level. Time and location fixed effects are included. Controls for time-varying local demographics (income, population, residential rents, and the one-year percent change in each) and business density are included, each is calculated for the radius area corresponding to the dependent variable.}
+\end{tablenotes}
+\end{threeparttable}
+\end{table}

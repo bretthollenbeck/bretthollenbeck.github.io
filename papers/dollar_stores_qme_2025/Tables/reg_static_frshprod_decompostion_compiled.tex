@@ -1,0 +1,46 @@
+
+\centering
+{
+\def\sym#1{\ifmmode^{#1}\else\(^{#1}\)\fi}
+\resizebox*{0.9\textwidth}{!}{
+\begin{threeparttable}
+
+\begin{tabular}{l*{2}{cc}}
+\hline\hline
+                &\multicolumn{4}{c}{Dependent Variable: Spending on Fresh Produce} \\
+                &\multicolumn{1}{c}{(1)}         &         &\multicolumn{1}{c}{(2)}         &         \\
+                & Balanced         &         & Balanced         &         \\
+\hline
+High income & & & & \\
+\quad\quad $\times$ First DS Entry&    2.010         &  (1.177)&    1.223         &  (1.191)\\
+\quad\quad$\times$ Two DS Entries&   -1.414         &  (2.008)&   -2.567         &  (2.067)\\
+\quad\quad $\times$ Three+ DS Entries&   -3.378         &  (3.027)&   -4.493         &  (3.153)\\
+Low income & & & & \\
+\quad\quad $\times$ First DS Entry&   -7.488\sym{***}&  (1.265)&   -5.168\sym{***}&  (1.272)\\
+\quad\quad $\times$ Two DS Entries&   -11.58\sym{***}&  (2.145)&   -6.647\sym{**} &  (2.196)\\
+\quad\quad $\times$ Three+ DS Entries&   -15.86\sym{***}&  (3.146)&   -8.174\sym{*}  &  (3.257)\\
+& & & & \\ 
+High income & & & & \\
+\quad\quad $\times$ First GS Exit&                  &         &    1.782         &  (1.240)\\
+\quad\quad $\times$ Two GS Exits&                  &         &    1.657         &  (1.897)\\
+\quad\quad $\times$ Three+ GS Exits&                  &         &   -0.610         &  (2.738)\\
+Low income & & & & \\
+\quad\quad $\times$ First GS Exit&                  &         &   -6.827\sym{***}&  (1.171)\\
+\quad\quad $\times$ Two GS Exits&                  &         &   -11.81\sym{***}&  (1.750)\\
+\quad\quad $\times$ Three+ GS Exits&                  &         &   -13.51\sym{***}&  (2.672)\\
+\hline
+Observations    &  246,851         &         &  246,851         &         \\
+F-stat          &     7.25         &         &     7.61         &         \\
+\(R^{2}\)       &     0.74         &         &     0.74         &         \\
+Adjusted \(R^{2}\)&     0.72         &         &     0.72         &         \\
+Spending Pre-Entry&    146.4         &         &    146.4         &         \\
+\hline\hline
+\end{tabular}
+\begin{tablenotes}[flushleft]
+\small 
+\item \textit{Notes: Unit of observation is the household-year. Standard errors (in parenthesis) clustered at the household level. Year and household fixed effects are included. Controls for time-varying household demographics (income, education, age, household size, marital status, occupation, weekly hours worked) are included. The balanced panel corresponds to households in the ``static" panel that are observed for at least 9 years. Spending on fresh produce includes uniform-weight products for all households, in addition to random-weight products for the subset of households reporting them. Low income refers to households with annual income in bin 7 (\$35,000 to \$45,000) or lower. High income corresponds to households in bin 8 or higher.}
+\end{tablenotes}
+
+
+\end{threeparttable}}
+}

@@ -1,0 +1,34 @@
+
+\centering
+{
+\def\sym#1{\ifmmode^{#1}\else\(^{#1}\)\fi}
+\resizebox*{\textwidth}{!}{
+\begin{threeparttable}
+
+\begin{tabular}{l*{7}{c}}
+\toprule
+                &\multicolumn{7}{c}{Dependent Variable: Spending by Product Category} \\                                                             \\
+                &\multicolumn{1}{c}{(1)}         &\multicolumn{1}{c}{(2)}         &\multicolumn{1}{c}{(3)}         &\multicolumn{1}{c}{(4)}         &\multicolumn{1}{c}{(5)}         &\multicolumn{1}{c}{(6)}         &\multicolumn{1}{c}{(7)}         \\
+\midrule
+One DS Entry  &   -0.521         &    0.209         &    1.171         &   -0.588         &   -2.685\sym{*}  &   -0.900         &    1.604         \\
+                &  (0.399)         &  (0.344)         &  (1.939)         &  (0.709)         &  (1.301)         &  (1.076)         &  (1.681)         \\
+Two DS Entries  &    0.190         &    0.920         &   -0.457         &    0.887         &   -1.554         &   -0.987         &    3.915         \\
+                &  (0.681)         &  (0.637)         &  (3.388)         &  (1.247)         &  (2.216)         &  (1.840)         &  (2.939)         \\
+Three+ DS Entries&    1.551         &    2.767\sym{**} &    1.789         &    1.881         &   -0.572         &    2.152         &    7.898         \\
+                &  (1.010)         &  (0.990)         &  (5.065)         &  (1.843)         &  (3.353)         &  (2.989)         &  (4.542)         \\
+\midrule
+Observations    &  246,851         &  246,851         &  246,851         &  246,851         &  246,851         &  246,851         &  246,851         \\
+F-stat          &     10.9         &     5.66         &     14.8         &     17.8         &     22.3         &     15.8         &     8.67         \\
+\(R^{2}\)       &     0.66         &     0.67         &     0.79         &     0.73         &     0.79         &     0.75         &     0.75         \\
+Adjusted \(R^{2}\)&     0.62         &     0.63         &     0.76         &     0.70         &     0.77         &     0.72         &     0.72         \\
+Spending Pre-Entry&     64.8         &     39.9         &    491.5         &    153.8         &    351.1         &    214.7         &    331.7         \\
+\bottomrule
+\end{tabular}
+\begin{tablenotes}[flushleft]
+\small 
+\item \textit{Notes: Unit of observation is the household-year. Standard errors (in parenthesis) clustered at the household level. Year and household fixed effects are included. Controls for time-varying household demographics (income, education, age, household size, marital status, occupation, weekly hours worked) are included. Results are shown for the balanced panel. Each column corresponds to a product category: (1) is canned produce, (2) is frozen produce, (3) is soda, snacks, candy and crackers, (4) is meals (incl. rice, pasta, soup), (5) is dairy, (6) is refrigerated and frozen meats, (7) is refrigerated and frozen baked goods, desserts, dough, and other.}
+\end{tablenotes}
+
+
+\end{threeparttable}}
+}

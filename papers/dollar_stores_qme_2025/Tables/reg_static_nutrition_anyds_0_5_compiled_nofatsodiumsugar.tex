@@ -1,0 +1,35 @@
+\centering
+{
+\def\sym#1{\ifmmode^{#1}\else\(^{#1}\)\fi}
+\resizebox*{0.75\textwidth}{!}{
+\begin{threeparttable}
+
+\begin{tabular}{l*{2}{c}}
+\toprule
+                &\multicolumn{1}{c}{0-2mi} &\multicolumn{1}{c}{2-5mi} \\ 
+\cmidrule(lr){2-2} \cmidrule(lr){3-3}
+                &\multicolumn{1}{c}{(1)} &\multicolumn{1}{c}{(2)} \\
+                &Fresh Produce (Oz) &Fresh Produce (Oz) \\
+\hline
+First DS Entry  &   -10.40         &    0.669         \\
+                &  (8.656)         &  (7.956)         \\
+Two DS Entries  &   -38.87\sym{**} &   -14.43         \\
+                &  (14.79)         &  (10.90)         \\
+Three+ DS Entries&   -55.24\sym{*}  &   -27.94\sym{*}  \\
+                &  (21.45)         &  (14.13)         \\
+\hline
+Observations    &  246,851         &  246,851         \\
+F-stat          &     8.47         &     8.49         \\
+\(R^{2}\)       &     0.75         &     0.75         \\
+Adjusted \(R^{2}\)&     0.72      &     0.72         \\
+Mean Pre-Entry  &    1,444         &    1,426         \\
+\bottomrule
+\end{tabular}
+
+\begin{tablenotes}[flushleft]
+\small 
+\item \textit{Notes: Unit of observation is the household-year. Standard errors (in parenthesis) clustered at the household level. Year and household fixed effects are included. Controls for time-varying household demographics (income, education, age, household size, marital status, occupation, weekly hours worked) are included. Results are shown for the balanced panel.}
+\end{tablenotes}
+
+\end{threeparttable}}
+}
