@@ -1,0 +1,58 @@
+# The Market for Fake Reviews
+Sherry He (UCLA Anderson), Brett Hollenbeck (UCLA Anderson), Davide Proserpio (USC Marshall)
+2022
+
+## What is this paper about?
+
+This paper documents the market for fake product reviews on Amazon.com and studies its economics and welfare consequences. Sellers purchase fake reviews through large private Facebook groups: sellers post product pictures and requests, reviewers purchase the product and leave a five-star review, and are then reimbursed the purchase price plus fees via PayPal. The paper hand-collects data from these groups to identify approximately 1,500 products buying fake reviews, then tracks their ratings, reviews, prices, sales rank, and Amazon's deletion behavior over time. The core findings are that fake reviews significantly but temporarily boost ratings and sales, that Amazon deletes many fake reviews but with a 100+ day lag that allows sellers to profit, and that after fake review campaigns end the share of one-star reviews increases by 70%, indicating that rating manipulation is primarily used by low-quality products to deceive consumers.
+
+## Important context
+
+- The dataset is unique: prior research used lab-generated fake reviews or platform-filtered reviews as proxies; this paper directly observes sellers purchasing fake reviews, providing ground truth that avoids these known limitations.
+- The review market studied is a "compensated review" market where the seller refunds the product price via PayPal contingent on a five-star review — distinct from "incentivized reviews" (which disclose the relationship and are allowed by Amazon).
+- The causal identification of fake reviews' effect on sales uses a natural experiment: an unannounced Amazon mass review purge in March 2020. Products that happened to buy fake reviews just before/during this purge (the "unlucky" control group) received no rating boost, enabling a difference-in-differences comparison.
+- The paper studies consumer harm by examining the post-campaign trajectory of ratings. When one-star reviews rise sharply after fake review campaigns end, it implies consumers were deceived into purchasing lower-quality products than they believed.
+- The dataset was collected October 2019 – June 2020 for product-level fake review observations.
+
+## Data and methods
+
+- **Facebook groups data:** Research assistants monitored ~23 fake review-related Facebook groups daily and collected ~1,500 unique Amazon products observed soliciting fake reviews (Oct 2019 – Jun 2020).
+- **Amazon product data:** Daily review, rating, price, and sales rank data for fake-review products plus ~2,714 competitor products (matched on search position prior to fake review campaign).
+- **Competitor products:** For each fake-review product, the two most frequently appearing competitors in search results over the 7 days before/after the first Facebook post.
+- **Short-term analysis:** Panel regression of weekly outcomes (average rating, review count, sales rank, price) around the start of fake review buying. Product and time fixed effects.
+- **Causal identification (DiD):** Amazon mass review purge (mid-March 2020) as natural experiment. "Control" products = those whose first Facebook post fell within ±2 weeks of the purge (78 products). "Treated" products = all others (1,412 products). Standard DiD on weekly sales rank.
+- **Long-term consumer harm:** Tracks ratings and one-star review share in weeks after the last observed fake review purchase. Text analysis of post-campaign one-star reviews.
+
+## Key results
+
+1. **Large short-term boost from fake reviews:** Weekly review count roughly doubles in the weeks after fake review purchasing begins. Average rating and share of five-star reviews increase substantially. Sales rank and search position improve significantly. Effects persist well beyond four weeks for review count and sales rank, but ratings revert within 2–4 weeks.
+
+2. **Causal effect on sales is large:** The DiD around the Amazon review purge shows that rating manipulation causes a significant increase in sales rank. The effect is economically large, establishing that fake reviews are profitable for sellers and explaining the existence of this market.
+
+3. **Post-campaign one-star reviews rise 70%:** After sellers stop purchasing fake reviews, the share of one-star reviews increases by roughly 70% relative to the pre-campaign level. This pattern is especially strong for new products and those with fewer prior reviews, indicating rating manipulation is used primarily to mask low product quality rather than to solve the cold-start problem for genuinely good products.
+
+4. **Text analysis confirms consumer deception:** One-star reviews posted after campaigns end are more likely than baseline one-star reviews to mention product quality — consistent with consumers who purchased based on inflated ratings discovering the true quality upon receipt.
+
+## Limitations and scope
+
+- **Amazon-specific:** The data come entirely from Amazon.com. The market structure of fake reviews (Facebook group model, PayPal reimbursement) and Amazon's detection/deletion policy are specific to this platform and period.
+- **Single time window:** The fake review purchasing data cover Oct 2019 – Jun 2020. Results may not generalize to later periods as Amazon and Facebook have both taken steps to disrupt these markets.
+- **Inability to observe all sales:** Sales rank is used as a proxy for sales volume; actual unit sales are not observed. This limits precision in measuring the magnitude of the causal effect.
+- **Platform response is incomplete:** The causal purge experiment relies on one exceptional event; Amazon's ongoing algorithmic deletion behavior is more typical and harder to use for causal identification.
+- **No seller-level analysis:** The data are organized at the product level. Seller-level behavior (e.g., how many products a seller runs fake reviews on, recidivism after deletion) is not studied.
+
+## Navigation guide
+
+- **Read first:** Introduction for the research questions and overview of the fake review market. Abstract for core findings.
+- **For data description:** Data section — description of the Facebook group monitoring, product sample, and Amazon outcome variables.
+- **For short-term effects:** Descriptive Results section — event study plots of ratings, reviews, and sales rank around the start of fake review campaigns.
+- **For causal identification:** Section on DiD (diff_in_diff.tex) — Amazon review purge natural experiment and treatment/control comparison.
+- **For consumer harm evidence:** Section on long-term harm (long_term_harm.tex) — one-star review trajectory and text analysis after campaigns end.
+- **For the economics framing:** Simple Economics section — discussion of costs and benefits of fake reviews that motivates the empirical questions.
+
+## Publication status
+
+Published: *Marketing Science.* 2022, Vol. 41(5), pp. 896–921.
+https://papers.ssrn.com/sol3/papers.cfm?abstract_id=3664992
+https://doi.org/10.1287/mksc.2022.1353
+https://pubsonline.informs.org/doi/10.1287/mksc.2022.1353
