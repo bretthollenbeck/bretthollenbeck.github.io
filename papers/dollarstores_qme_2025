@@ -1,0 +1,54 @@
+# The Impact of Dollar Store Expansion on Local Market Structure and Food Access
+El Hadi Caoui (University of Toronto), Brett Hollenbeck (UCLA Anderson), Matthew Osborne (University of Toronto), Elina T. Page (USDA Economic Research Service)
+2025
+
+## What is this paper about?
+
+This paper studies the rapid expansion of dollar store chains (Dollar General, Dollar Tree, Family Dollar) in the U.S. retail landscape from 2008 to 2019, and measures its causal impact on local market structure and food accessibility. Dollar stores have grown to become the most numerous retail format in the U.S. — collectively opening roughly 3.75 stores per day over the past decade — raising concerns that their entry crowds out independent grocery stores and reduces fresh food access, particularly for low-income residents. The paper uses a combination of reduced-form event studies and counterfactual analysis to document these effects. The main reduced-form finding is that dollar store entry is associated with a ~25% decline in the number of independent grocery stores within 0–2 miles of the entry location. A counterfactual entry ban on dollar store expansion beginning in 2010 is estimated to have produced substantially more grocery stores, with the largest gains in low-income, high-minority, and high-poverty markets.
+
+## Important context
+
+- This paper is the reduced-form companion to "Dynamic Entry & Spatial Competition: An Application to Dollar Store Expansion" (RAND, forthcoming). An earlier version combined both the reduced-form food-access analysis and the structural dynamic game; the two halves were split into separate papers. This paper contains the reduced-form results and consumer outcome analysis; the structural model and entry regulation counterfactuals using the dynamic game are in the RAND paper.
+- The paper focuses on the research questions: how does dollar store entry affect local market structure and food access for consumers, particularly in low-income and minority communities?
+- Data on consumer purchases come from the Nielsen/IRI Homescan panel, which allows measuring changes in food expenditures, produce purchases, and store format usage around dollar store entry events.
+
+## Data and methods
+
+- **SNAP Retailer Panel:** Yearly panel of SNAP-authorized retailers 2008–2019 across U.S. markets; tracks number and type of retail food stores (dollar stores, grocery/combination, convenience, supermarket/supercenter) at the local level.
+- **Dollar store distribution centers:** Locations and opening dates used to instrument for dollar store entry in reduced-form regressions.
+- **Nielsen TDLinx:** Per-store average revenue by store format, used to characterize store format economics.
+- **Nielsen/IRI Homescan Panel:** Individual-level panel of all retail food purchases for a national sample of consumers; used to measure spending on produce, store format usage, travel costs, and trip frequency around dollar store entry events.
+- **Census demographics:** Market-level income, poverty rates, vehicle access, and racial composition for heterogeneity analysis.
+- **Reduced-form estimation:** Event study design around dollar store entry events; market fixed effects and demographic controls; outcomes measured at 0–2mi, 2–5mi, and 5–10mi radii.
+- **Counterfactual analysis:** Uses structural estimates from the companion RAND paper to simulate market structure evolution under a hypothetical ban on dollar store expansion from 2010.
+
+## Key results
+
+1. **Dollar store entry reduces nearby grocery stores by ~25%:** Event studies show that dollar store entry is associated with a reduction of roughly 25% in the number of independent grocery and combination stores within 0–2 miles of the entry location. Effects are locally concentrated — there is no significant change in grocery stores at the 5–10 mile radius.
+
+2. **Dollar store entry reduces fresh produce access:** Consumer panel data show that households near new dollar store entries reduce their spending on fresh produce and increase purchases from dollar stores. Effects are strongest for lower-income households and those with limited vehicle access.
+
+3. **Counterfactual entry ban produces 56% more grocery stores:** If dollar store expansion had been prohibited after 2010, markets would have on average 56% more grocery/combination stores and 54% more convenience stores by 2019 — roughly 450 more grocery stores and 750 more convenience stores across the 846 studied markets.
+
+4. **Effects are largest in disadvantaged markets:** Counterfactual grocery store gains are largest in lower-income markets, those with higher shares of minority residents, higher poverty rates, and fewer households with vehicle access — the communities most reliant on nearby retail for food access.
+
+5. **Dollar stores do not offset grocery access loss:** Despite offering food products at low prices, dollar stores carry limited perishables and do not fully substitute for grocery stores as a source of fresh food access, particularly for households without vehicles making short trips.
+
+## Limitations and scope
+
+- **Reduced-form identification assumptions:** The event study relies on the assumption that dollar store entry timing is not driven by anticipation of grocery store trends. Distribution center expansion provides some exogenous variation, but full causal identification is difficult.
+- **2008–2019 window:** The sample does not extend past 2019; post-COVID retail dynamics are not captured.
+- **No direct welfare calculation:** The paper establishes that dollar store expansion crowds out grocery stores and reduces fresh food access, but does not compute full consumer welfare implications using a demand model.
+
+## Navigation guide
+
+- **Read first:** Introduction for motivation, policy context, and main findings. Abstract for concise summary.
+- **For reduced-form entry effects:** Reduced-form section (RF_reorganized.tex) — event study figures by radius, heterogeneity by income/race/vehicle access.
+- **For consumer outcomes:** Data section and reduced-form section — Nielsen/IRI results on produce spending and format usage.
+- **For counterfactual results:** Counterfactuals discussion in reduced-form section — comparison to entry ban scenario by market type.
+- **For companion structural paper:** See "Dynamic Entry & Spatial Competition" (RAND) for the structural model, estimation, and full counterfactual policy analysis.
+
+## Publication status
+
+Published: *Quantitative Marketing and Economics.* Accepted.
+https://papers.ssrn.com/sol3/papers.cfm?abstract_id=4163102
