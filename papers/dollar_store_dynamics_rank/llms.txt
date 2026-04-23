@@ -1,0 +1,56 @@
+# Dynamic Entry & Spatial Competition: An Application to Dollar Store Expansion
+El Hadi Caoui (University of Toronto), Brett Hollenbeck (UCLA Anderson), Matthew Osborne (University of Toronto)
+2025
+
+## What is this paper about?
+
+This paper develops and estimates a dynamic oligopoly model of spatial retail competition and uses it to study the effects of dollar store chain expansion in the United States. The key methodological contribution is incorporating location choices — not just whether to enter a market but where within a market — as part of firms' strategy space, alongside a tractable estimator for this high-dimensional dynamic game. The empirical contribution is showing that accounting for spatial reallocation by rival stores is crucial to evaluate the net impact of dollar stores. When dollar stores enter a location, rivals don't simply exit the market — they often spatially reallocate to less contested locations. Dispersal policies that restrict dollar store clustering, rather than preventing aggregate entry, can reduce retail variety by limiting rivals' ability to differentiate spatially. The paper finds that an entry tax that fully halts dollar store expansion would increase grocery stores by 18% and convenience stores by 7%, but a dispersal policy produces more mixed effects because of these spatial spillovers.
+
+## Important context
+
+- This paper is one of two papers split from an earlier draft titled "The Impact of Dollar Store Expansion on Local Market Structure and Food Access." The structural dynamic game and spatial methodology are in this paper; the reduced-form food access results are in the companion QME paper (Caoui, Hollenbeck, Osborne, and Page, QME 2025).
+- The key methodological innovation is extending the ECCP estimator of Kalouptsidi (2020) from single-agent dynamic discrete choice to dynamic games with terminal actions. This handles high-dimensional state spaces and non-stationary dynamics without integrating over the full state space.
+- Non-stationarity is a central feature of the model: dollar store chains expanded their distribution center networks over the sample period (2008–2019), progressively reducing their store-level operating costs. The model accounts for this as a source of non-stationarity.
+- Location choices are modeled by indexing the state space by census-tract-level units within markets, following Seim (2006). This spatial granularity is required to capture dispersal policy effects but creates a high-dimensional state space that the estimation strategy is designed to handle.
+- Results on the dispersal policy are policy-relevant: many cities (Birmingham, Atlanta, New Orleans, Akron, Oklahoma City, Tulsa, Fort Worth) have already enacted dollar store entry bans or dispersal rules, and this paper provides welfare analysis of such policies.
+
+## Data and methods
+
+- **SNAP Retailer Panel:** Yearly panel of SNAP-authorized retailers 2008–2019, covering all food-selling stores by format (dollar store, grocery/combination, convenience, supermarket/supercenter) at the census-tract level.
+- **Dollar store distribution centers:** Locations and opening dates of distribution centers for Dollar General, Dollar Tree, and Family Dollar, used to model time-varying cost reductions and as instruments.
+- **Census demographics:** Census-tract-level income, population density, vehicle access, and racial composition.
+- **Model:** Dynamic oligopoly following Ericson-Pakes (1995) with spatial differentiation (Seim 2006 style). Firms choose entry/exit at each census-tract location. Dollar store chains, grocery stores, and convenience stores are modeled as strategic players. State space includes store counts by format and location within a market, plus distribution center network coverage.
+- **Estimator:** ECCP (Euler Condition Conditional Probability) estimator from Kalouptsidi (2020), extended to games with terminal actions. Finite dependence simplifies value function recovery. GMM-Euler approach avoids full state space integration. Selection problem unique to games (vs. single-agent) is identified and addressed.
+- **Counterfactuals:** Two policy scenarios: (i) entry tax on dollar stores at varying rates; (ii) 1-mile dispersal policy prohibiting new dollar store entry within 1 mile of an existing one. Both solved as new Markov Perfect Equilibria.
+
+## Key results
+
+1. **Dollar stores have low entry costs and high profitability:** Structural estimates confirm dollar store chains have significantly lower entry costs than independent rivals and are substantially more profitable per store. Grocery store profits are significantly harmed by nearby dollar stores (within 0–2 miles), while within-chain cannibalization is strong at 0–2 miles but reverses (scale economies) at 2–5 miles.
+
+2. **Entry tax raises grocery and convenience counts:** An entry tax fully halting dollar store expansion increases grocery stores by 18% and convenience stores by 7% on average across the 846 studied markets. Effects are largest in lower-income, higher-density markets.
+
+3. **Dispersal policy has mixed effects due to spatial reallocation:** For every one unit reduction in dollar store presence at constrained locations, 0.34 dollar stores enter elsewhere in the same market. This spatial substitution offsets 20–27% of the direct gains in grocery and convenience stores. In some market segments, the dispersal policy actually reduces grocery store counts by pushing dollar stores into previously less-contested locations.
+
+4. **Distributional heterogeneity:** The dispersal policy shifts dollar store entry toward higher-income, lower-population-density locations, generating uneven distributional effects across neighborhoods that may worsen food access in lower-income areas while improving it in higher-income ones.
+
+5. **Methodological contribution:** The ECCP estimator extension to dynamic games with terminal actions (where exit is the terminal action) provides a tractable and general approach to estimating high-dimensional dynamic games. The spatial reallocation finding demonstrates the importance of this spatial modeling for correctly evaluating entry regulation.
+
+## Limitations and scope
+
+- **Market definition:** The model is estimated in small and medium-sized markets. The sample excludes very large urban metros where the competitive dynamics differ and computational constraints bind. Results may not generalize to high-density cities.
+- **Limited store formats:** The model includes dollar stores, grocery/combination stores, and convenience stores as strategic players. Supermarkets, big-box stores, and pharmacies impact the profit functions but are not modeled as dynamic players.
+- **No consumer demand estimates:** The model recovers firm-side costs and competitive effects but does not estimate consumer demand. Welfare analysis is based on store count changes and travel cost proxies, not a full consumer welfare calculation.
+- **Non-stationarity simplification:** Distribution center network expansion is modeled as a deterministic, observable driver of cost changes over time. More complex or endogenous supply-chain investment dynamics are abstracted away.
+
+## Navigation guide
+
+- **Read first:** Abstract and Introduction (intro_v2.tex) — spatial reallocation mechanism, dispersal policy implications.
+- **For the model:** Section on industry model (industry_model_RR1.tex) — entry/exit game with location choice, profit functions, equilibrium definition.
+- **For estimation approach:** Section on estimation (estimation_approach_RR1.tex) — ECCP estimator, finite dependence, extension to games.
+- **For results:** Section on estimation results (estimation_results_RR1.tex) — structural parameter estimates and economic magnitudes.
+- **For counterfactuals:** Section on counterfactuals (counterfactuals_RR1.tex) — entry tax and dispersal policy analysis, spatial decomposition.
+
+## Publication status
+
+Published: *RAND Journal of Economics.* Forthcoming.
+https://papers.ssrn.com/sol3/papers.cfm?abstract_id=4872647
