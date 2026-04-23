@@ -1,0 +1,56 @@
+# Leveraging Loyalty Programs Using Competitor Based Targeting
+Wayne Taylor (SMU Cox), Brett Hollenbeck (UCLA Anderson)
+2021
+
+## What is this paper about?
+
+This paper studies when and why loyalty programs (LPs) increase firm profits, using a large and detailed dataset from a Fortune 500 specialty retailer on individual customer shopping behavior before and after joining the loyalty program. The program takes the common form of tiered quantity discounts (second-degree price discrimination), and the paper analyzes it through the lens of behavior-based pricing theory. The central finding is that a customer's spatial relationship to competing stores is a far stronger predictor of LP-driven spending increases than their prior spending history. Customers who are spatially vulnerable to nearby competitors increase spending when they join the LP because the discount steals business from those competitors. Customers in isolated markets with no nearby competitors merely receive discounts on purchases they would have made anyway, making the LP costly to the firm. The paper uses LASSO regularization with hundreds of spatial variables and a selection-corrected two-stage model to operationalize this insight into a spatial segmentation strategy that substantially improves LP profitability.
+
+## Important context
+
+- The dataset is from a confidential Fortune 500 specialty retailer whose product category cannot be disclosed. The data provide pre- and post-join spending at the item level for ~10,000 customers, which is unusual — most LP research only observes post-join behavior and cannot study the selection effect.
+- The LP is a "limited" program (discounts apply only to one product category, not all purchases), which enables cleaner analysis of the business-stealing mechanism.
+- The identification challenge is that customers self-select into the LP, often anticipating a spending increase. The paper addresses this with a two-stage Heckman-style control function approach, which substantially affects the estimated effects.
+- The paper explicitly does not claim to identify the causal effect of joining the LP on spending for every customer — rather, the focus is on predicting and segmenting based on competitive structure to improve LP targeting.
+
+## Data and methods
+
+- **POS transaction data:** SKU-level purchases for a random sample of 10,029 customers at a U.S. specialty retailer, March 2012–March 2014. Covers ~2.4 million SKU purchases across 897,819 store trips. Average customer has ~90 trips, spends ~$684/month at the firm.
+- **LP membership data:** Binary indicator of when each customer joined the LP; ~7 months pre-join and ~8.5 months post-join observed on average. Email marketing activity and specific LP promotion emails also observed.
+- **Competitor location data:** Latitude/longitude of stores for 4 named competitors (one big-box, two small-box generalists, one specialist in the focal category). Customers' locations from zip code data.
+- **Spatial features:** Hundreds of variables characterizing customer-to-focal-store and customer-to-competitor distances, store density, and interactions — used as LASSO inputs.
+- **Estimation:** Two-stage model: first stage is a probit for LP join decision (with exclusion restrictions to identify selection); second stage models change in spending post-join, correcting for selection using the first-stage predicted probability as a control function. LASSO regularization in both stages to handle high-dimensional spatial data.
+- **Segmentation evaluation:** Out-of-sample predicted profitability across spatial segments compared against naive spending-based or no-targeting approaches.
+
+## Key results
+
+1. **Large and heterogeneous changes in spending after joining:** Average changes in behavior are large but highly variable. A subset of customers ("consolidators") increase trip frequency at the focal store; another subset ("upgraders") maintain trip frequency but buy higher-priced items. For many other customers, joining the LP yields no behavior change or even a decrease in net profits.
+
+2. **Spatial competitive structure is the dominant predictor:** Model-free evidence and formal LASSO models show that customers facing more accessible competitor stores are far more likely to increase spending upon joining the LP. Spatial (horizontal) variables substantially outperform past spending (vertical) variables in predictive accuracy. Simple spatial metrics (e.g., distance to nearest competitor) perform poorly; complex LASSO-selected spatial metrics are required.
+
+3. **LP works via business stealing, not demand expansion:** The pattern of results — spending increases most where customers have competitor access — suggests the LP mainly shifts purchases from competitors to the focal firm rather than expanding total demand. This is consistent with the Shin-Sudhir behavior-based pricing model when horizontal preferences are stochastic.
+
+4. **Spatial segmentation substantially improves LP profitability:** Using LASSO-derived spatial segments to restrict LP promotion to spatially vulnerable customers (rather than treating all customers equally or selecting on past spending) yields substantially higher predicted LP profits in out-of-sample validation.
+
+5. **Selection correction matters:** Without correcting for self-selection, the estimated effects of joining the LP are biased upward. After applying the control function, the average effect of joining the LP on firm profits is small or even negative, making the heterogeneity analysis and segmentation results more important.
+
+## Limitations and scope
+
+- **No competitor spending data:** Total customer wallet and switching behavior are inferred from changes in behavior at the focal firm and their spatial relationship to competitors; actual purchases at rivals are not observed.
+- **Causal interpretation is limited:** The paper explicitly notes it cannot fully rule out that spending changes coincide with other events correlated with LP joining; the control function approach reduces but does not eliminate selection bias concerns.
+
+## Navigation guide
+
+- **Read first:** Abstract and Introduction for the core argument — horizontal spatial vulnerability predicts LP effectiveness better than vertical spending history.
+- **For data description:** Data section — retailer, POS data, competitor locations, and LP structure.
+- **For model-free evidence:** Reduced form section — descriptive evidence that spending changes more in competitive markets.
+- **For the formal model:** LASSO section (lasso_revised.tex) — two-stage selection-correction model, LASSO estimation, and comparison of horizontal vs. vertical variables.
+- **For segmentation results:** LASSO section, segmentation subsection — out-of-sample profitability of spatial targeting compared to naive approaches.
+- **For theoretical framework:** Introduction — connection to Shin-Sudhir behavior-based pricing theory.
+
+## Publication status
+
+Published: *Quantitative Marketing and Economics.* 2021, Vol. 19, pp. 417–455.
+https://papers.ssrn.com/sol3/papers.cfm?abstract_id=3353432
+https://link.springer.com/article/10.1007/s11129-021-09237-y
+https://doi.org/10.1007/s11129-021-09240-z
