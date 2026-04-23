@@ -1,0 +1,155 @@
+# Brett Hollenbeck — Academic Website
+Brett Hollenbeck is an Associate Professor of Marketing at the UCLA Anderson School of Management. His research spans empirical industrial organization and quantitative marketing, with a focus on online platforms, retail competition, fake reviews, privacy regulation, and consumer finance. His work has been published in top journals in economics and marketing, including Management Science, Marketing Science, RAND Journal of Economics, Quantitative Marketing and Economics, Proceedings of the National Academy of Sciences, Journal of Marketing Research, and Harvard Business Review.
+
+Website: https://bretthollenbeck.com
+Email: brett.hollenbeck@anderson.ucla.edu
+CV: https://bretthollenbeck.com/HollenbeckCV2026.pdf
+Google Scholar: https://scholar.google.com/citations?user=XxhMIfAAAAAJ
+
+---
+
+## Working Papers
+
+**Retailer Price Competition and Assortment Differentiation: Evidence from Entry Lotteries**
+Sylvia Hristakeva, Brett Hollenbeck, Kosuke Uetake. Marketing Science, Revise and Resubmit.
+https://papers.ssrn.com/sol3/papers.cfm?abstract_id=4857371
+
+**Misinformation and Mistrust: The Equilibrium Effects of Fake Reviews on Amazon.com**
+Ashvin Gandhi, Brett Hollenbeck, Li Zhijian. American Economic Review, Revise and Resubmit.
+https://papers.ssrn.com/sol3/papers.cfm?abstract_id=5260875
+
+**The Impact of LLM Adoption on Online User Behavior**
+Nicolas Padilla, H. Tai Lam, Anja Lambrecht, Brett Hollenbeck. Management Science, Revise and Resubmit.
+https://papers.ssrn.com/sol3/papers.cfm?abstract_id=5393256
+
+---
+
+## Publications
+
+Each entry links to a machine-readable summary (llms.txt) and full-text markdown (paper.md) where available.
+
+**The Financial Consequences of Legalized Sports Gambling**
+Poet Larsen, Brett Hollenbeck, Davide Proserpio. Management Science, Forthcoming.
+Summary: https://bretthollenbeck.com/papers/financial_consequences_sports_gambling/llms.txt
+Full text: https://bretthollenbeck.com/papers/financial_consequences_sports_gambling/paper.md
+SSRN: https://papers.ssrn.com/sol3/papers.cfm?abstract_id=4903302
+
+**Dynamic Entry & Spatial Competition: An Application to Dollar Store Expansion**
+El Hadi Caoui, Brett Hollenbeck, Matthew Osborne. RAND Journal of Economics, Forthcoming.
+Summary: https://bretthollenbeck.com/papers/dollar_store_dynamic_rand/llms.txt
+Full text: https://bretthollenbeck.com/papers/dollar_store_dynamic_rand/paper.md
+SSRN: https://papers.ssrn.com/sol3/papers.cfm?abstract_id=4872647
+
+**Evaluating the Impact of Privacy Regulation on E-Commerce Firms: Evidence from Apple's App Tracking Transparency**
+Guy Aridor, Yeon-koo Che, Brett Hollenbeck, Max Kaiser, Dan McCarthy. Management Science, Forthcoming.
+Summary: https://bretthollenbeck.com/papers/att_privacy_ecommerce/llms.txt
+Full text: https://bretthollenbeck.com/papers/att_privacy_ecommerce/paper.md
+SSRN: https://papers.ssrn.com/sol3/papers.cfm?abstract_id=4698374
+
+**The Impact of Dollar Store Expansion on Local Market Structure and Food Access**
+El Hadi Caoui, Brett Hollenbeck, Matthew Osborne, Elina T. Page. Quantitative Marketing and Economics, 2025.
+Summary: https://bretthollenbeck.com/papers/dollar_store_expansion/llms.txt
+Full text: https://bretthollenbeck.com/papers/dollar_store_expansion/paper.md
+SSRN: https://papers.ssrn.com/sol3/papers.cfm?abstract_id=4163102
+
+**Detecting Fake Review Buyers Using Network Structure: Direct Evidence from Amazon**
+Sherry He, Brett Hollenbeck, Gijs Overgoor, Davide Proserpio, Ali Tosyali. Proceedings of the National Academy of Sciences, 2022, Vol. 119(47).
+Summary: https://bretthollenbeck.com/papers/detecting_fake_review_buyers/llms.txt
+Full text: https://bretthollenbeck.com/papers/detecting_fake_review_buyers/paper.md
+SSRN: https://papers.ssrn.com/sol3/papers.cfm?abstract_id=4147920
+
+**The Market for Fake Reviews**
+Sherry He, Brett Hollenbeck, Davide Proserpio. Marketing Science, 2022, Vol. 41(5), pp. 896–921.
+Summary: https://bretthollenbeck.com/papers/market_for_fake_reviews/llms.txt
+Full text: https://bretthollenbeck.com/papers/market_for_fake_reviews/paper.md
+SSRN: https://papers.ssrn.com/sol3/papers.cfm?abstract_id=3664992
+
+**Leveraging Loyalty Programs Using Competitor Based Targeting**
+Brett Hollenbeck, Wayne Taylor. Quantitative Marketing and Economics, 2021, Vol. 19, pp. 417–455.
+Summary: https://bretthollenbeck.com/papers/loyalty_programs_targeting/llms.txt
+Full text: https://bretthollenbeck.com/papers/loyalty_programs_targeting/paper.md
+SSRN: https://papers.ssrn.com/sol3/papers.cfm?abstract_id=3353432
+
+**Winning Big: Scale and Success in Retail Entrepreneurship**
+Brett Hollenbeck, Renato Giroldo. Marketing Science, 2021, Vol. 41(2), pp. 271–293.
+SSRN: https://ssrn.com/abstract=3613183
+
+**Taxation and Market Power in the Legal Marijuana Industry**
+Brett Hollenbeck, Kosuke Uetake. RAND Journal of Economics, 2021, Vol. 52(3), pp. 559–595.
+SSRN: https://papers.ssrn.com/sol3/papers.cfm?abstract_id=3237729
+
+**Horizontal Mergers and Innovation in Concentrated Industries**
+Brett Hollenbeck. Quantitative Marketing and Economics, 2020, Vol. 18, pp. 1–37.
+Summary: https://bretthollenbeck.com/papers/horizontal_mergers_innovation_2020/llms.txt
+Full text: https://bretthollenbeck.com/papers/horizontal_mergers_innovation_2020/paper.md
+PDF: https://bretthollenbeck.com/papers/horizontal_mergers_innovation_2020/Hollenbeck_mergers_QME2020.pdf
+
+**Advertising Strategy in the Presence of Reviews: An Empirical Analysis**
+Brett Hollenbeck, Sridhar Moorthy, Davide Proserpio. Marketing Science, 2019, Vol. 38(5), pp. 793–811.
+SSRN: https://papers.ssrn.com/sol3/papers.cfm?abstract_id=3076239
+
+**Online Reputation Mechanisms and the Decreasing Value of Chain Affiliation**
+Brett Hollenbeck. Journal of Marketing Research, 2018, Vol. 55(5), pp. 636–654.
+Summary: https://bretthollenbeck.com/papers/online_reputation_chains_2018/llms.txt
+Full text: https://bretthollenbeck.com/papers/online_reputation_chains_2018/paper.md
+SSRN: https://papers.ssrn.com/sol3/papers.cfm?abstract_id=2874560
+
+**The Economic Advantages of Chain Organization**
+Brett Hollenbeck. RAND Journal of Economics, 2017, Vol. 48(4), pp. 1130–1153.
+Summary: https://bretthollenbeck.com/papers/economic_advantages_chain_2017/llms.txt
+Full text: https://bretthollenbeck.com/papers/economic_advantages_chain_2017/paper.md
+PDF: https://bretthollenbeck.com/papers/economic_advantages_chain_2017/Hollenbeck_chains_RAND2017.pdf
+
+---
+
+## Research Data
+
+**Amazon Fake Reviews Dataset**
+Review-level data on fake reviews purchased through Facebook groups (Oct 2019 – Jun 2020), used in "The Market for Fake Reviews" and "Detecting Fake Review Buyers." Includes ~1,500 products that bought fake reviews plus ~2,700 competitor products.
+README: https://www.dropbox.com/s/fj2pi2svgocj6th/README.rtf?dl=0
+Dataset (90MB): https://www.dropbox.com/s/4ll1k7b5bt2em2s/final-dataset-all.dta?dl=0
+
+**Amazon Fake Reviews Detection Data and Code**
+Data and replication code for the network-based fake review detection methodology in "Detecting Fake Review Buyers Using Network Structure."
+Data and code (22MB): https://www.dropbox.com/sh/ubjmuecovg7gfh9/AADmaBvlxwPJ9jXbpkqiVMkfa?dl=0
+Description: https://bretthollenbeck.com/detection_datasets_description.docx
+
+**Texas Hotel Industry Tax Receipts (2000–2015)**
+Monthly revenue data for Texas hotels, used in research on online reputation and chain affiliation.
+Description: https://bretthollenbeck.com/hotel_revenue_description-1.docx
+Dataset (9MB): https://www.dropbox.com/s/oyfjb5o0lttb1q5/hotel_revenue_cleaned.csv.zip?dl=0
+
+**Texas Hotel Online Reviews Full Text**
+Full text of online reviews for Texas hotels.
+Description: https://bretthollenbeck.com/hotel_reviews_description.docx
+Dataset (130MB): https://www.dropbox.com/s/rbqhd13e89ijlsr/Review%20full%20text%20data.zip?dl=0
+
+**Washington State Cannabis Industry Data**
+Retail transaction and upstream inventory transfer data from Washington's cannabis tracking system, used in "Taxation and Market Power in the Legal Marijuana Industry."
+Retail data (30MB): https://www.dropbox.com/s/2ths5zgdrgo7xnf/Cannabis%20data.zip?dl=0
+Upstream inventory (120MB): https://www.dropbox.com/s/9snnp8omhs43u87/biotrackthc_inventorytransfers_updated.csv.zip?dl=0
+Description: https://bretthollenbeck.com/cannabis_data_description-1.docx
+
+---
+
+## Press Coverage
+
+Research on legalized sports gambling has been covered by: The Economist (Dec 2024), The New York Times, The Atlantic, Washington Post, Bloomberg, Business Insider, NBC News, The Guardian, NPR, Financial Times, and Last Week Tonight with John Oliver.
+
+Research on fake reviews has been covered by: The Economist, The New York Times, Wall Street Journal (multiple articles), Harvard Business Review, Business Insider, CNBC, and UCLA Anderson Review.
+
+Research on cannabis taxation has been covered by: UCLA Anderson Review and Leafly.
+
+Research on online reputation and hotel chains has been covered by: The Wall Street Journal and The Week.
+
+Full press list: https://bretthollenbeck.com/press.html
+
+---
+
+## Navigation
+
+- Homepage / About: https://bretthollenbeck.com
+- Research: https://bretthollenbeck.com/research.html
+- Data: https://bretthollenbeck.com/data.html
+- Press: https://bretthollenbeck.com/press.html
+- Contact: https://bretthollenbeck.com/contact.html
