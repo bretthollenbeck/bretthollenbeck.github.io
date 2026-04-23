@@ -1,0 +1,57 @@
+# Evaluating The Impact of Privacy Regulation on E-Commerce Firms: Evidence from Apple's App Tracking Transparency
+Guy Aridor (Northwestern Kellogg), Yeon-Koo Che (Columbia), Brett Hollenbeck (UCLA Anderson), Maximilian Kaiser (Hamburg University / Grips Intelligence), Daniel McCarthy (Emory)
+2025
+
+## What is this paper about?
+
+This paper estimates the economic impact of Apple's App Tracking Transparency (ATT) policy on e-commerce firms. ATT, introduced in April 2021 with iOS 14.5, required apps to prompt users to opt in to cross-app data sharing; roughly 80–85% of users opted out, severely curtailing the ability of Facebook/Instagram to target advertisements to likely purchasers. The paper asks how this disruption to targeted advertising affected downstream firm revenues. Using novel datasets on advertising spend and performance across thousands of firms, the paper first confirms that conversion-optimized Facebook advertising was hit much harder by ATT than Google advertising. It then uses a difference-in-differences design — comparing firms with high vs. low pre-ATT reliance on Facebook advertising — to show that firms more exposed to ATT experienced a 34–38% relative decline in revenues after the policy took effect. Effects are concentrated among smaller firms and driven primarily by reduced new customer acquisition rather than repeat purchases.
+
+## Important context
+
+- Facebook/Instagram advertising relied heavily on off-platform conversion data (tracking purchases back to ad exposures) for targeting and measurement. ATT severed this link for iOS users, while Google's advertising stack was less affected because Google's core products depend less on third-party cross-app tracking.
+- The key identification assumption is that firms with different levels of pre-ATT Facebook reliance would have had parallel revenue trends absent ATT — validated by flat pre-treatment event studies.
+- The paper uses two primary datasets: Grips Intelligence (Google Analytics data for thousands of domains globally) and an anonymous provider's data on Facebook and Google advertising spend and Shopify revenue. The combination enables measuring both the advertising performance shock and the revenue shock.
+- Budget reallocation from Facebook to Google after ATT is documented and discussed; the estimated revenue effects are conditional on firms' optimal reallocation, so they represent a lower bound on the total value of pre-ATT targeted advertising.
+
+## Data and methods
+
+- **Dataset A (Grips Intelligence):** Google Analytics data observed for thousands of DTC e-commerce domains worldwide; monthly sessions, revenue, and conversions by traffic source (Facebook/Instagram vs. Google vs. direct etc.) and by device type (iOS vs. Android); used for both advertising performance analysis and primary revenue analysis.
+- **Dataset B (advertising + Shopify):** Advertising spend on Facebook and Google by campaign objective (conversion-optimized vs. brand/reach); Shopify revenue broken down into new vs. repeat customer orders; allows linking ad spend to revenue and separating new customer acquisition from existing customer sales.
+- **Treatment variable:** Share of pre-ATT revenue from Facebook/Instagram traffic (median split defines high vs. low exposure); alternative: share of pre-ATT iOS revenue.
+- **Estimator:** Standard difference-in-differences with firm and time fixed effects; category-time fixed effects as robustness. Event study plots validate parallel pre-trends.
+- **Advertising performance analysis:** Comparison of conversion-optimized vs. brand-awareness campaign metrics before vs. after ATT (within-platform test), and Facebook vs. Google performance relative to pre-ATT baseline (cross-platform test).
+
+## Key results
+
+1. **Facebook conversion advertising severely impacted:** After ATT, conversion-optimized Facebook campaigns show significantly worse performance (higher cost per conversion) relative to brand-awareness campaigns. The gap between Facebook and Google performance also widened post-ATT, consistent with the mechanism that ATT harmed off-platform tracking that Facebook relied on more than Google.
+
+2. **Revenue declined 34–38% for most-exposed firms:** Firms in the top half of pre-ATT Facebook revenue reliance experienced a 34–38% relative decline in monthly revenues after April 2021, compared to firms in the bottom half. The effect is robust to alternative exposure measures (iOS share) and to the Shopify subsample.
+
+3. **Small firms drove the effect:** Revenue declines are concentrated among firms with below-median pre-ATT revenue. Large firms appear better able to weather the shock, either through diversified acquisition channels or ability to absorb short-run losses while adjusting.
+
+4. **New customer acquisition mechanism:** In the Shopify data, revenue declines are driven primarily by a reduction in orders from new customers, not repeat customers. This is consistent with the mechanism — ATT impaired the ability of Facebook to identify and target likely new customers. Existing customers can be retained through email lists and direct channels not affected by ATT.
+
+5. **Budget reallocation to Google:** Firms shifted advertising spend away from Facebook and toward Google after ATT. This reallocation is larger for more Facebook-exposed firms. Despite reallocation, revenue still fell, suggesting that Facebook and Google advertising are not perfect substitutes for customer acquisition.
+
+## Limitations and scope
+
+- **Selection on observables:** The empirical strategy compares firms with different Facebook exposure levels. If these firms also differ in other ways that predict post-ATT revenue trends, the estimates would be confounded. Pre-trend tests are reassuring.
+- **No welfare calculation:** The paper documents firm-side costs of ATT but does not compute consumer welfare benefits from enhanced privacy. A complete policy evaluation would require both sides.
+- **Short sample window:** The analysis focuses on the period around ATT's introduction in April 2021. Longer-run effects as firms fully adapt are not captured.
+- **Generalizability:** Results apply to DTC e-commerce firms that rely on direct-response digital advertising. Brick-and-mortar retailers, service firms, or businesses with strong brand equity and organic demand may be less affected.
+
+## Navigation guide
+
+- **Read first:** Abstract and Introduction for the research question and policy context. The key mechanism — ATT → loss of targeting → revenue decline — is laid out clearly in the intro.
+- **For advertising performance analysis:** Section on advertising (advertising.tex) — comparing conversion vs. brand campaigns before/after ATT, and Facebook vs. Google performance.
+- **For primary revenue results:** Section on revenues — Table of baseline DiD estimates (Table shows 34–38% decline), Figure showing event study plot (parallel pre-trends, post-ATT drop).
+- **For the new customer mechanism:** Shopify subsample results in revenue section and appendix — new vs. repeat customer revenue breakdown.
+- **For robustness:** Appendix — iOS exposure alternative strategy; Shopify revenue validation.
+
+## Publication status
+
+Published: *Management Science.* Forthcoming.
+https://pubsonline.informs.org/doi/10.1287/mnsc.2024.06600
+https://doi.org/10.1287/mnsc.2024.06600
+https://papers.ssrn.com/sol3/papers.cfm?abstract_id=4698374
+
