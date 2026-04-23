@@ -1,0 +1,21 @@
+
+\begin{table}[ht]
+\centering
+\caption{Out-of-sample prediction performance of the random forests classifier with varying sets of features.}\label{tab:RF_pred_results}
+\begin{tabular}{lccccc}
+    \hline
+    Features&	AUC&Accuracy	&TNR&	TPR&	F1 Score\\
+    \hline
+    \hline
+    Network&\textbf{	.890} &	.\textbf{821} &	.839 &	\textbf{.797} &	\textbf{.821}\\
+    Top-2 Network&	.879 &	.812 &	.832 &	.787 &	.812\\
+    % Metadata&	.868 &	.791 &	.834 &	.734 &	.791\\
+    Metadata&	.874 &	.811 &	.858 &	.748 &	.810\\ % after adding "stdev review len" feature
+    Text&	.857 &	.770 &	\textbf{.929} &	.559 &	.759\\
+    Image&	.592 &	.599 &	.792 &	.343 &	.577\\
+    \hline
+    % All Features&	.933 &	.859 &	.879 &	.832 &	.859\\
+    All Features&	.932 &	.860 &	.881 &	.832 &	.860\\ % after adding "stdev review len" feature
+    \hline
+\end{tabular}
+\end{table}

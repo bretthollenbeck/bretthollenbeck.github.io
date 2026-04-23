@@ -1,0 +1,51 @@
+\begin{table}[ht]
+\centering
+\small
+\caption{Product-level features generated from review content and product network.}\label{tab:features_desc}
+\resizebox{\linewidth}{!}{\begin{tabular}{c|l|l}
+    \hline
+    Type & Feature & Description\\
+    \hline
+    \multirow{4}{*}{\rotatebox[origin=c]{90}{Network}} 
+     & degree & Total number of reviewers in common with other products\\
+     & clustering coef & Clustering coefficient of the product\\
+     & eigenvector cent & Eigenvector centrality score of the product\\
+     & pagerank & PageRank score of the product\\
+    \hline
+    \multirow{8}{*}{\rotatebox[origin=c]{90}{Metadata}} 
+     & tf-idf sim & Avg similarity of TF-IDF features b/w reviews of a product \\
+     & \# reviews & Number of reviews\\
+     & avg review rating & Avg review ratings \\
+     & time b/w reviews & Avg, min, max, and stdev of time in days b/w reviews\\
+     %& avg days between reviews & Average time in days between reviews \\
+     %& std days between reviews & Stdev. of time in days between reviews\\
+     %& max days between reviews & Maximum time in days between reviews \\
+     %& min days between reviews & Minimum time in days between reviews\\
+     & share helpful & Share of reviews with helpful votes\\
+     & share 1star & Share of reviews with 1-star rating\\
+     & share 5star & Share of reviews with 5-star rating\\
+     & share photo & Share of reviews with review photo\\
+     & stdev review len & Variation of review lengths of a product\\
+    \hline
+    \multirow{3}{*}{\rotatebox[origin=c]{90}{Image}} 
+    & img sim& Avg, min, max, and stdev of image similarity b/w product reviews \\
+    & sim review & Avg, min, max, and stdev of similarity b/w all pairs of review images \\
+    & sim product& Avg, min, max, and stdev of similarity b/w product and review images \\
+    %  & min sim & Minimum pair-wise similarity \\
+    %  & max sim & Maximum pair-wise similarity  \\
+    %  & avg sim & Average pair-wise similarity  \\
+    %  & std sim & Stdev. of all pair-wise similarities  \\
+    %  & min sim review & Minimum pair-wise similarity between review images\\ 
+    %  & max sim review & Maximum pair-wise similarity between review images \\
+    %  & avg sim review & Average pair-wise similarity between review images \\
+    %  & std sim review & Stdev. of all pair-wise similarities between review images\\
+    % & min sim product & Minimum pair-wise similarity between review and product images\\
+    % & max sim product & Maximum pair-wise similarity between review and product images\\
+    % & avg sim product & Average pair-wise similarity between review and product images\\
+    % & std sim product & Stdev. of pair-wise similarities between review and product images\\
+    \hline
+    \multirow{2}{*}{\rotatebox[origin=c]{90}{Text}} &\multirow{2}{*}{tf-idf} &\multirow{2}{*}{Top 1000 TF-IDF features of a product} \\
+    & & \\
+    \hline
+\end{tabular}}
+\end{table}
