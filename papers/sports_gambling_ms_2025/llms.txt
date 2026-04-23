@@ -1,0 +1,55 @@
+# The Financial Consequences of Legalized Sports Gambling
+Brett Hollenbeck (UCLA Anderson), Poet Larsen (USC Marshall), Davide Proserpio (USC Marshall)
+2025
+
+## What is this paper about?
+
+This paper studies the causal impact of legalized sports gambling (LSG) on consumer financial health. Following a 2018 U.S. Supreme Court ruling, 38 states have legalized some form of sports gambling. The paper exploits the staggered state-by-state rollout of legalization to measure effects on credit scores, bankruptcy rates, debt collection, loan delinquencies, and related indicators. The main finding is that legalization modestly but significantly worsens consumer financial health — average credit scores decline, and multiple indicators of excessive debt increase. Effects are roughly three times larger in states that allow online/mobile betting compared to states with only in-person access, suggesting that convenience of access is central to the harm.
+
+## Important context
+
+- The paper uses the Callaway-Sant'Anna (2021) difference-in-differences estimator throughout, chosen explicitly to handle staggered rollout and heterogeneous treatment effects correctly. Standard TWFE is not used.
+- Two distinct treatment conditions are estimated: (1) any legal sports gambling in the state (general access), and (2) legal online/mobile sports gambling specifically. The two treatments reveal importantly different magnitudes.
+- The paper distinguishes its causal approach from the prior survey-based and observational literature, which could not rule out selection and omitted variable bias.
+- Results on heterogeneous effects suggest low-income and subprime consumers bear disproportionate harm.
+- Data funded by the California Policy Lab at UC; access to the UC Consumer Credit Panel was central to the paper.
+
+## Data and methods
+
+- **Consumer Credit Panel:** University of California Consumer Credit Panel (UC CCP) — credit bureau data for ~7 million U.S. adults; quarterly observations on credit scores, credit card balances and limits, loan delinquencies, bankruptcies, collections, and debt consolidation loans.
+- **Treatment data:** State-by-state legalization dates for any sports gambling and specifically for online/mobile sports gambling (2018–2023).
+- **Sample aggregation:** Individual records aggregated to county-quarter level; county observations weighted by 2015 population.
+- **Estimator:** Callaway-Sant'Anna (2021) CS estimator — compares treated vs. not-yet-treated states; allows dynamic treatment effects and pre-trend testing; avoids TWFE bias under staggered adoption.
+- **Outcomes:** Credit score; bankruptcy filing; debt collections; debt consolidation loan usage; auto loan delinquency; credit card delinquency; cumulative credit card limits.
+
+## Key results
+
+1. **Credit score decline:** General LSG access causes a ~0.8-point average credit score decline; online/mobile access causes a ~2.75-point decline (roughly 3× larger). Pre-treatment event studies show flat parallel trends in both cases.
+
+2. **Bankruptcy increase:** Online/mobile access increases bankruptcy filing likelihood by ~9 per 100,000 consumers per quarter, roughly a 10% increase relative to baseline. The effect only materializes with a ~2-year lag, consistent with bankruptcy being a last resort. This translates to an estimated 30,000 additional personal bankruptcies per year nationally.
+
+3. **Debt distress indicators:** Online gambling access also significantly increases auto loan delinquencies and debt collections. Effects on credit card delinquency are more mixed, partially offset by credit card issuers reducing limits (a supply-side response to increased consumer risk).
+
+4. **Online access drives results:** The effects of general (offline) legalization are modest and often statistically insignificant for the debt indicators; online access generates large and robust effects. This pattern strongly implicates ease of mobile access as the mechanism.
+
+5. **Heterogeneous effects:** Effects are largest for consumers with subprime pre-treatment credit scores — the most financially vulnerable groups bear the greatest harm.
+
+## Limitations and scope
+
+- **Aggregate data limitation:** Estimation is at the county-quarter level, so individual-level heterogeneity is studied indirectly through subgroup cuts; the paper cannot identify individual gamblers within the data.
+- **Selection of states:** The paper relies on variation across states that chose different legalization dates; if legalization timing is correlated with underlying financial trends in ways not captured by fixed effects, estimates may be biased. Pre-trend tests are reassuring but cannot prove the assumption.
+- **No advertising data:** The paper does not link advertising intensity to outcomes; a proposed extension to study whether advertising moderates effects was not pursued in the current version.
+- **Period:** The sample covers 2018–2023, a period overlapping with COVID-19 (2020). COVID controls and robustness checks are included but some COVID-era heterogeneity may remain.
+
+## Navigation guide
+
+- **Read first:** Abstract and Introduction (Section 1) for motivation and main findings. Section 2 for data description.
+- **For empirical strategy:** Section 3 (Empirical Strategy) for the Callaway-Sant'Anna setup and identification checks.
+- **For main results:** Section 4 (Aggregate Effects) — Figure showing credit score event study, Table with ATT estimates for all outcomes.
+- **For heterogeneous effects:** Section 5 (Heterogeneity Analysis) — effects by gender, age, income, and credit tier.
+- **For appendix robustness:** Supplementary tables and figures (Appendix) — alternative estimators, COVID robustness.
+
+## Publication status
+
+Published: *Management Science.* Forthcoming.
+https://papers.ssrn.com/sol3/papers.cfm?abstract_id=4903302
