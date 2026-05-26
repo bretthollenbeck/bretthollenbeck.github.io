@@ -1,0 +1,97 @@
+# Taxation and Market Power in the Legal Marijuana Industry
+
+Brett Hollenbeck (UCLA Anderson) and Kosuke Uetake (Yale School of Management)
+
+---
+
+## What Is This Paper About
+
+This paper shows that ignoring retailer market power fundamentally distorts tax policy conclusions and applies this to studying tax policy in the legal marijuana industry. Washington state's strict cap on retail licenses has produced retailers who behave like local monopolists. This market power means retailers strategically absorb part of any tax increase by reducing their margins, causing tax revenue to rise faster than a competitive benchmark would predict. The central result is that despite Washington's 37% tax rate—the highest in the U.S.—the state is still on the upward-sloping portion of the Laffer curve, can generate substantially more revenue by raising taxes further, and would benefit even more from capturing retailer profits directly via a state monopoly. The paper combines structural demand estimation with a reduced-form sufficient statistic approach (using observed wholesale prices and measured pass-through) to deliver transparent, credible welfare and incidence conclusions.
+
+---
+
+## Important Context
+
+The analysis is centered on Washington state's legal recreational marijuana market, created by a November 2012 referendum—the first in the U.S. Washington's regulatory design differs sharply from other states: it imposes the highest excise tax (37%), maintained a strict cap on retail licenses (initially 334, later expanded to 556), and closed down unregulated medical dispensaries in 2015. This combination makes Washington an unusually clean laboratory: the entry cap creates clear retailer market power, and the BioTrack tracking system generates complete transaction-level data on both retail and wholesale prices.
+
+The identification strategy relies on the unique observation of wholesale prices. Unlike typical settings where marginal costs must be estimated from structural models, wholesale prices are directly observed, so retail margins are measured rather than imputed. Pass-through of wholesale cost shocks to retail prices is estimated by OLS/first-differences with retailer, product, and year-month fixed effects. These pass-through estimates serve as a sufficient statistic for tax incidence and deadweight loss following Fabinger and Weyl (2013), avoiding the need to separately estimate demand curvature and supply elasticities.
+
+---
+
+## Data and Methods
+
+**Data source**: Washington State Liquor and Cannabis Board (WSLCB) BioTrack administrative database—all legally required transactions in the state from November 2014 through September 2017. The dataset is essentially a census: every wholesale and retail transaction is recorded, with prices and quantities but no customer identifiers.
+
+**Sample**: ~80 million transactions totaling $2.5 billion in sales. Analysis focuses on 2016–2017 when the market had stabilized after early price declines and firm entry.
+
+**Products**: Usable marijuana (flower, ~70% of sales), solid edibles, liquid edibles, and extracts. These four categories account for 96% of sales.
+
+**Key methods**:
+- *Demand estimation*: BLP-style random coefficients logit for horizontally differentiated products. Products defined at the product-category × strain level within each retailer-market. Instruments use upstream wholesale prices as cost shifters. Preference heterogeneity estimated via simulated GMM.
+- *Pass-through estimation*: OLS and first-difference regressions of retailer-level average retail price on own wholesale price and competitor wholesale prices, with retailer, product, and time fixed effects.
+- *Tax incidence*: Fabinger-Weyl (2013) sufficient statistic framework combining observed pass-through (λ) and estimated conduct parameter (θ) to compute consumer vs. producer incidence and deadweight loss without directly estimating marginal costs.
+- *Pass-through and demand*: This paper was one of the first to demonstrate that a flexible demand model is necessary to capture demand curvature, and to show the relationship between demand curvature and pass-through, as well as to consider the implications for tax incidence and firm conduct.
+- *Counterfactuals*: Nash-Bertrand price competition assumed on the supply side; counterfactual equilibria solved by iterating on retailer first-order conditions; wholesale prices held fixed in counterfactuals given the competitive upstream market.
+
+---
+
+## Key Results
+
+1. **Demand elasticities**: Product-level own-price elasticities range from −2.8 to −3.5 on average. The aggregate category elasticity (marijuana vs. outside good) is −1.04—nearly unit elastic and much more inelastic than spirits (−2.8, per Miravete et al. 2018). This is similar to alcohol demand and much more elastic than tobacco (−0.6 to −0.7).
+
+2. **Pass-through > 1**: Estimated pass-through rate is significantly above 1 (λ ≈ 1.6) and robust to all specifications (levels, first differences, subsamples by time and border counties). Pass-through > 1 is consistent with high retailer market power and log-convex demand.
+
+3. **Near-monopolistic retailer conduct**: Conduct parameter θ = 0.89 (median 0.87), meaning observed retail margins are 89% of what a monopolist would charge. Retailers behave almost as local monopolists; consumers show little cross-retailer price sensitivity.
+
+4. **Tax incidence**: 34% of the tax burden falls on producers/retailers; 66% falls on consumers. Social cost per dollar of revenue raised: $2.40 (i.e., for every $1 in new tax revenue, $2.40 in combined producer + consumer surplus is lost). This is high relative to competitive benchmarks, driven by high retailer market power and inelastic, log-convex demand.
+
+5. **Still on the upward Laffer curve at 37%**: R'(τ) > 0 at the current tax rate. Raising the tax from 37% to 40% increases monthly revenue by $1.5 million (+5.9%); raising to 50% increases revenue by $5.9 million per month (+22%). Retailers respond by strategically reducing pre-tax margins, moderating consumption declines.
+
+6. **Market power amplifies revenue from tax increases**: When retailers exercise market power and strategically lower margins following a tax increase, revenue rises by 17% more than a competitive (no-price-adjustment) model would predict.
+
+7. **Flexible demand necessary to capture curvature and pass-through**: Without a flexible demand, the random coefficients logit is restrictive on the amount of curvature possible in the demand system, with implications for pass-through.
+
+8. **State monopoly counterfactual**: A state monopoly on retail sales, charging profit-maximizing prices with the 37% tax, yields combined revenue of up to $910 million/year vs. $327 million/year under current policy. Retailer variable profits alone are $594 million/year—nearly twice current annual tax revenue. Because entry restrictions already push retailers to near-monopoly pricing, state takeover would have little effect on consumer prices.
+
+9. **Under-taxing leaves large revenue on the table**: A 15% tax rate (used by California, Colorado, and others) would reduce Washington's annual revenue by $165 million (−50%). Extrapolating to California's population, California foregoes over $800 million/year in revenue relative to Washington's tax rate.
+
+10. **No evidence of a widespread black market**: Three mutually reinforcing findings: (a) aggregate cannabis demand elasticity ≈ 1, implying little substitution to an outside substitute; (b) most substitution occurs within-retailer across products, suggesting consumers are attached to specific stores; (c) pass-through > 1 would be impossible if a lower-priced black market substitute existed. Washington's policy of capping entry and closing unregulated medical dispensaries appears to have suppressed the black market.
+
+---
+
+## Limitations and Scope
+
+**Geographic scope**: Results are specific to Washington state. Findings may not generalize directly to states that did not close down unregulated medical dispensaries (e.g., California), that allow retail vertical integration, or that set up state monopoly retail (British Columbia, Ontario). The mechanism—market power interacting with tax policy—would be weaker in more competitive retail markets.
+
+**Time scope**: Data run through September 2017. The market was stabilizing; prices were still declining from early-entry highs, and the entry cap was changed in January 2016. The conduct parameter and pass-through estimates may shift as the industry matures or if the cap changes again.
+
+**No dynamics or addiction modeling**: The demand model is static and does not capture habit formation or inter-temporal effects. If cannabis is addictive, demand elasticities may differ in the long run and the social cost of taxation may be understated or overstated depending on the nature of addiction.
+
+**Upstream competition assumed**: The pass-through analysis and counterfactuals treat the upstream (processor/producer) market as competitive and hold wholesale prices fixed. The paper verifies this is reasonable given > 600 active processors and modest concentration (top 50 processors account for half of sales), but upstream market power is not formally estimated.
+
+**Social welfare does not incorporate externalities**: The social cost calculation covers only private consumer and producer surplus; it excludes externalities from marijuana consumption (health effects, traffic fatalities, crime). Existing evidence on externalities is limited and the paper does not take a position on optimal taxation once externalities are included.
+
+**Instruments for demand**: BLP demand instruments rely on upstream transaction prices as cost-side instruments; validity rests on the exclusion restriction that upstream cost variation is not directly correlated with retail demand unobservables. Results are robust to alternative specifications but the exclusion restriction is not directly testable.
+
+---
+
+## Navigation Guide
+
+- **Core argument (market power distorts tax policy)**: Introduction (Section 1) and the single-product monopoly Laffer curve derivation (Section 5, subsection "Is the Current Policy Maximizing Revenue?")
+- **Data and institutional context**: Section 3 ("Data and Industry Background"), especially the Regulation subsection and Table 1 (state tax comparisons)
+- **Descriptive evidence of market power**: Figures 1–3 (price over time, wholesale price over time, retailer margin histogram) and Table 2 (price descriptives)
+- **Pass-through estimation and results**: Section 4 ("Empirical Framework"), subsection "Pass-Through Rate," Table 3 (pass-through regressions)
+- **Demand estimation and elasticities**: Section 4, subsection "Consumer Demand Model," Table 5 (demand estimates) and Table 6 (elasticities)
+- **Tax incidence and social cost calculation**: Section 5 ("Policy Analysis"), subsection "Tax Incidence and Social Cost"
+- **Laffer curve analysis**: Section 5, subsection "Is the Current Policy Maximizing Revenue?" (theoretical derivation for single-product and multi-product monopoly)
+- **Counterfactual simulations (state monopoly, alternative tax rates)**: Section 5, subsection "Counterfactual Policy Simulations," Table 7 (market structure counterfactuals) and Table 8 (tax change counterfactuals)
+- **Black market evidence**: Introduction (three-point summary) and pass-through discussion in Section 4
+- **Appendix**: Additional pass-through robustness (weekly data), alternative demand specifications, oligopoly theory extension
+
+---
+
+## Publication Status
+
+Hollenbeck, Brett, and Kosuke Uetake. "Taxation and Market Power in the Legal Marijuana Industry." *The RAND Journal of Economics* 52, no. 3 (Fall 2021): 559–595.
+
+DOI: https://doi.org/10.1111/1756-2171.12384
